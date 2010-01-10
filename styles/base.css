@@ -1,0 +1,48 @@
+body {
+  color: #777777;
+  background: white; }
+
+p {
+  color: #777777; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #123456; }
+
+ul {
+  color: #777777; }
+
+a {
+  color: #558822;
+  text-decoration: none; }
+  a.block {
+    display: block;
+    padding: 1%;
+    font-size: 140%;
+    border-bottom: 1px solid #cccccc; }
+
+dl dt {
+  margin-top: 10px;
+  font-size: 120%;
+  color: black; }
+
+#stuff a {
+  display: block; }
+#stuff img {
+  margin: 0; }
+
+#footer, #statements {
+  margin-top: 10px;
+  padding-top: 5px; }
+
+#footer img {
+  margin: 0;
+  float: none; }
+
+#agile_manifesto li {
+  list-style-type: none;
+  color: #333333; }
+#agile_manifesto strong {
+  font-size: 120%; }
+
+.container {
+  border-top: 10px solid #123456; }
