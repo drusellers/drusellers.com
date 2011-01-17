@@ -36,12 +36,12 @@ dl dt {
   #epic p {
     font-size: 1.5em; }
 
-.bio {
+.others {
   background: #dddddd;
   padding: 5px; }
 
 #fold {
-  background: #f4f5f5 url("images/gradient.png") repeat-x 0% 0%; }
+  background: #f4f5f5 url("../images/gradient.png") repeat-x 0% 0%; }
 
 #stuff a {
   display: block; }
