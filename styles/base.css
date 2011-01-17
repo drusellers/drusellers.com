@@ -1,13 +1,15 @@
 body {
   color: #777777;
-  background: white; }
+  background: white;
+  margin-top: 0;
+  margin-bottom: 0; }
 
 p {
   color: #777777; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #123456;
-  font-family: georgia,  Times New Roman""; }
+  color: #011c26;
+  font-family: "georgia", "" Times New Roman ""; }
 
 ul {
   color: #777777; }
@@ -26,6 +28,21 @@ dl dt {
   font-size: 120%;
   color: black; }
 
+#epic {
+  background: #f4f5f5;
+  padding: 1em;
+  border: 1px solid #e8e9e9;
+  margin-bottom: 1.5em; }
+  #epic p {
+    font-size: 1.5em; }
+
+.bio {
+  background: #dddddd;
+  padding: 5px; }
+
+#fold {
+  background: #f4f5f5 url("images/gradient.png") repeat-x 0% 0%; }
+
 #stuff a {
   display: block; }
 #stuff img {
@@ -35,9 +52,13 @@ dl dt {
   margin-top: 10px;
   padding-top: 5px; }
 
-#footer img {
-  margin: 0;
-  float: none; }
+#footer {
+  background: #011c26; }
+  #footer h3 {
+    color: #588c8c; }
+  #footer img {
+    margin: 0;
+    float: none; }
 
 #agile_manifesto li {
   list-style-type: none;
@@ -45,5 +66,10 @@ dl dt {
 #agile_manifesto strong {
   font-size: 120%; }
 
-.container {
-  border-top: 10px solid #123456; }
+#header {
+  border-top: 20px solid #011c26; }
+
+.sass {
+  background: #ce4dd6;
+  padding: 2px;
+  color: white; }

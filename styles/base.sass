@@ -1,55 +1,84 @@
-!pink = #ee88cd
-!dark_grey= #373c40
-!fresh_green= #558822
-!brown= #57470c
-!white= #fff
-!gray= #777
-!blue= #123456
+$pink: #ee88cd
+$dark_grey: #373c40
+$fresh_green: #558822
+$brown: #57470c
+$white: #fff
+$gray: #777
+$blue: #011C26
+$background: #F4F5F5
 
 body
-	color = !gray
-	background = !white
+	color: $gray
+	background: $white
+	margin-top: 0
+	margin-bottom: 0
 p
-	color = !gray
+	color: $gray
 
 h1,h2,h3,h4,h5,h6
-	color = !blue
-	font-family = "georgia", ""Times New Roman""
+	color: $blue
+	font-family: "georgia", ""Times New Roman""
 
 ul
-	color = !gray
+	color: $gray
 a
-	color = !fresh_green
-	text-decoration = "none"
+	color: $fresh_green
+	text-decoration: none
 	&.block
-		display = "block"
-		padding = 1%
-		font-size = 140%
-		border-bottom = 1px "solid" #ccc
+		display: block
+		padding: 1%
+		font-size: 140%
+		border-bottom: 1px solid #ccc
 dl dt
-	margin-top = 10px
-	font-size = 120%
-	color = #000
+	margin-top: 10px
+	font-size: 120%
+	color: #000
 
+#epic
+	background: #F4F5F5
+	padding: 1em
+	border: 1px solid #E8E9E9
+	margin-bottom: 1.5em
+	
+	p
+		font-size: 1.5em
+.bio
+	background: #ddd
+	padding: 5px
+
+#fold
+	background: #F4F5F5 url('images/gradient.png') repeat-x 0% 0%
+	
 #stuff
 	a
-		display = "block"
+		display: block
 	img
-		margin = 0
+		margin: 0
 
 #footer, #statements
-	margin-top = 10px
-	padding-top = 5px
-#footer
+	margin-top: 10px
+	padding-top: 5px
+
+#footer	
+	background: $blue
+	
+	h3
+		color: #588C8C
 	img
-		margin = 0
-		float = "none"
+		margin: 0
+		float: none
 
 #agile_manifesto
 	li
-		list-style-type = "none"
-		color = #333	
+		list-style-type: none
+		color: #333	
 	strong
-		font-size = 120%
-.container
-	border-top = 10px "solid" !blue
+		font-size: 120%
+
+#header
+	border-top: 20px solid $blue
+
+.sass
+	background: #ce4dd6
+	padding: 2px
+	color: #fff
