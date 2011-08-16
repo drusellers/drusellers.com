@@ -10,62 +10,65 @@
 		<link title="drusellers-rss" type="application/rss+xml" rel="alternate" href="http://feeds.feedburner.com/drusellers" />
 		<link title="drusellers-atom" type="application/atom+xml" rel="alternate" href="http://feeds.feedburner.com/drusellers" />
 
-		<link rel="stylesheet" href="styles/print.css" type="text/css" media="print" />
-		<link rel="stylesheet" href="styles/screen.css" type="text/css" media="screen" />
-		<link rel="stylesheet" href="styles/base.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="static/styles/reset.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="static/styles/text.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="static/styles/960.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="static/styles/fonts.css" type="text/css" media="screen" />
+
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/base.css')}}" type="text/css" media="screen" />
+    {% assets "all-css" %}
+      <link rel="stylesheet" href="{{ASSET_URL}}" type="text/css" media="screen" />
+    {% endassets %}
 	</head>
 	<body>
 	<!-- inspiration: http://secondandpark.com/ -->
-	<!-- jhttp://www.joyent.com/ - style-->
+	<!-- http://www.joyent.com/ - style-->
 	<!-- http://www.wallst.com/business.asp - content ideas-->
 	<div id="header">
-		<div class="container">
-			<div class="span-16">
-				<img src="images/logo-black.png" alt="Dru Sellers" />
+		<div class="container_12">
+			<div class="grid_8">
+				<img src="static/images/logo-black.png" alt="Dru Sellers" />
 			</div>
-			<div class="span-8 last">
+			<div class="grid_4 omega">
 				<div id="hcard-Dru-Sellers" class="vcard">
-	                <span class="fn">Dru Sellers</span>
-	                <div class="email">dru {at} drusellers {dot} com</div>
-			
-	                <div class="twitter"><a href="http://twitter.com/drusellers">@drusellers</a></div>
+	        <span class="fn">Dru Sellers</span>
+	        <div class="email">dru {at} drusellers {dot} com</div>
+	        <div class="twitter"><a href="http://twitter.com/drusellers">@drusellers</a></div>
 					<div class="blog"><a href="http://drusellers.codebetter.com/">blog</a></div>
-	                <div class="adr">
-	                    <div class="street-address"></div>
-	                    <span class="locality">Lawrence</span>
-	                    , 
-	                    <span class="region">KS</span>
-	                    , 
-	                    <span class="postal-code">66049</span>
-	                    <span class="country-name">USA</span>
-	                </div>
-	                <div class="tel">+1 785/371-4589</div>
-	            </div><!-- /hcard -->
+	        <div class="adr">
+	          <div class="street-address"></div>
+	          <span class="locality">Austin</span>
+	          , 
+	          <span class="region">TX</span>
+	          , 
+	          <span class="postal-code">78759</span>
+	          <span class="country-name">USA</span>
+	        </div>
+	      <div class="tel">+1 785/371-4589</div>
+	     </div><!-- /hcard -->
 			</div>
 		</div>
 	</div><!-- /header -->
-	<div class="container">
+	<div class="container_12">
 		<hr/>
-		<div id="bio" class="span-7 colborder">
-			<img src="images/profile.jpg" alt="Me in my new suit." />
+		<div id="bio" class="grid_4">
+			<img src="static/images/profile.jpg" alt="Me in my new suit." />
 			<p>Enjoying my new suit!</p>
 			<h3>Bio</h3>
 			<p>A business-focused Solutions Architect with extensive Enterprise Architecture and application development skills. Understands the fundamentals of business processes and capable of architecting solutions to enable them. Deep understanding of the .Net platform. Recognized thought leader in the .Net community. Outstanding problem solver. Heavily sought after for architectural guidance and technical solutions. Responsible for defining Enterprise Architecture including business, application, information, and technical for a $65 billion dollar financial institution.</p>
 		</div><!-- /bio -->
-		<div id="others" class="span-16 last">
-			<div class="span-16 last">
+		<div id="others" class="grid_8 omega">
 				<h1>Hi, I'm Dru.</h1>
 				<div id="epic">
 					<h2>Be Epic</h2>
 					<p>I may never be able to do <a href="http://www.youtube.com/watch?v=sFcTSmaz4Oc&amp;feature=fvw">these stunts</a>, but I do know that I wake up every day trying to figure out how I can bring this to software development and systems analysis.</p>
 					<p><em>I love what I do, I hope that you do too.</em></p>
 					<p>-d</p>
-				</div>
 			</div>
 		</div><!-- /others -->
 		<hr/>
-		<div class="span-24" id="fold">
-			<div class="span-7 colborder">	
+		<div id="fold">
+			<div class="grid_4">	
 				<h3>Media</h3>
 				<ul>
 					<li><a href="http://herdingcode.com/?p=272">Herding Code: Nu</a></li>
@@ -74,7 +77,7 @@
 					<li><a href="http://www.hanselminutes.com/default.aspx?showID=129">Appearance on Hanselminutes</a></li>
 				</ul>
 			</div>
-			<div class="span-9">
+			<div class="grid_4">
 				<h3>Projects</h3>
 				<ul>
 					<li><a href="http://masstransit-project.com/">MassTransit</a></li>
@@ -82,19 +85,24 @@
 					<li><a href="http://magnum-project.com/">Magnum</a></li>
 					<li><a href="https://github.com/chucknorris">chuck</a>: uppercut, dropkick, roundhouse</li>
 					<li><a href="https://github.com/drusellers/hawkeye">klinger</a></li>
-					<li>nu/nupack</li>
+          <li><a href="http://github.com/darthfubumvc/">The Fubu Stack (MVC, Core, Bottles)</a></li>
+					<li>nu/nupack/nuget</li>
 				</ul>
 			</div>
-			<div class="span-6 last">
-				<img src="images/ineta" alt="Ineta Community Champion" />
+			<div class="grid_4 omega">
+				<img src="static/images/ineta" alt="Ineta Community Champion" />
 			</div>
 		</div>
 		<hr/>
+    <div id="personal">
+      <h6>Other Outlets</h6>
+      CC double c's
+      <a href="http://drusellers.tumblr.com">my fitness journey</a>
+    </div>
 	</div>
 	<div id="footer">
-		<div class="container">
-		<div class="span-24">
-			<div class="span-8">
+		<div class="container_12">
+			<div class="grid_4">
 				<h3>Boring</h3>
 				<p>
 					Copyright since &copy;1997<br/>
@@ -105,17 +113,16 @@
 					<a rel="license" href="http://creativecommons.org/licenses/by/3.0/us/">Creative Commons Attribution 3.0 United States License</a>.
 					</p>
 			</div>
-			<div class="span-8">
+			<div class="grid_4">
 				<h3>Props</h3>
 				<p>Logo design by the <a href="http://www.theagilebadger.com">Agile Badger</a></p>
 				<p>Color inspired by '<a href="http://kuler.adobe.com/#themeID/1185348">Keep the Change</a>'</p>
 			</div>
-			<div class="span-8 last">
+			<div class="grid_4 omega">
 				<h3>A little zen</h3>
 				<p>Water is fluid, soft and yielding. But water will wear away rock, which is rigid and cannot yield. As a rule, whatever is fluid, soft and yielding will overcome whatever is rigid and hard. This is another paradox: what is soft is strong.</p>
 				<p><em>Lao-tzu</em></p>
 			</div>
-		</div>
 		</div>
 	</div>
 	</body>

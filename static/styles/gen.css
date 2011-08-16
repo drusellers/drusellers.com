@@ -1,0 +1,119 @@
+@media -sass-debug-info{filename{font-family:}line{font-family:\0000310}}
+body {
+  color: #777777;
+  background: white;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+@media -sass-debug-info{filename{font-family:}line{font-family:\0000316}}
+p {
+  color: #777777;
+  font-family: "sansation";
+}
+
+@media -sass-debug-info{filename{font-family:}line{font-family:\0000320}}
+h1, h2, h3, h4, h5, h6 {
+  color: #011c26;
+  font-family: "sansation", "georgia", "" Times New Roman "";
+}
+
+@media -sass-debug-info{filename{font-family:}line{font-family:\0000324}}
+ul {
+  color: #777777;
+}
+
+@media -sass-debug-info{filename{font-family:}line{font-family:\0000326}}
+a {
+  color: #558822;
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{font-family:}line{font-family:\0000329}}
+a.block {
+  display: block;
+  padding: 1%;
+  font-size: 140%;
+  border-bottom: 1px solid #cccccc;
+}
+
+@media -sass-debug-info{filename{font-family:}line{font-family:\0000334}}
+dl dt {
+  margin-top: 10px;
+  font-size: 120%;
+  color: black;
+}
+
+@media -sass-debug-info{filename{font-family:}line{font-family:\0000339}}
+#epic {
+  background: #f4f5f5;
+  padding: 1em;
+  border: 1px solid #e8e9e9;
+  margin-bottom: 1.5em;
+}
+@media -sass-debug-info{filename{font-family:}line{font-family:\0000344}}
+#epic p {
+  font-size: 1.5em;
+}
+
+@media -sass-debug-info{filename{font-family:}line{font-family:\0000346}}
+.others {
+  background: #dddddd;
+  padding: 5px;
+}
+
+@media -sass-debug-info{filename{font-family:}line{font-family:\0000350}}
+#fold {
+  background: #f4f5f5 url("../images/gradient.png") repeat-x 0% 0%;
+}
+
+@media -sass-debug-info{filename{font-family:}line{font-family:\0000354}}
+#stuff a {
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:}line{font-family:\0000356}}
+#stuff img {
+  margin: 0;
+}
+
+@media -sass-debug-info{filename{font-family:}line{font-family:\0000359}}
+#footer, #statements {
+  margin-top: 10px;
+  padding-top: 5px;
+}
+
+@media -sass-debug-info{filename{font-family:}line{font-family:\0000363}}
+#footer {
+  background: #011c26;
+}
+@media -sass-debug-info{filename{font-family:}line{font-family:\0000366}}
+#footer h3 {
+  color: #588c8c;
+}
+@media -sass-debug-info{filename{font-family:}line{font-family:\0000368}}
+#footer img {
+  margin: 0;
+  float: none;
+}
+
+@media -sass-debug-info{filename{font-family:}line{font-family:\0000373}}
+#agile_manifesto li {
+  list-style-type: none;
+  color: #333333;
+}
+@media -sass-debug-info{filename{font-family:}line{font-family:\0000376}}
+#agile_manifesto strong {
+  font-size: 120%;
+}
+
+@media -sass-debug-info{filename{font-family:}line{font-family:\0000379}}
+#header {
+  border-top: 20px solid #011c26;
+}
+
+@media -sass-debug-info{filename{font-family:}line{font-family:\0000382}}
+.sass {
+  background: #ce4dd6;
+  padding: 2px;
+  color: white;
+}

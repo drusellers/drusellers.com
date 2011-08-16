@@ -1,0 +1,8 @@
+@font-face {
+  font-family : "sansation";
+  src : url("../type/Sansation_Regular-webfont.eot");
+  src : local("☺"),
+    url("../type/Sansation_Regular-webfont.woff") format("woff"),
+    url("../type/Sansation_Regular-webfont.ttf") format("ttf"),
+    url("../type/Sansation_Regular-webfont.svg") format("svg");
+}
