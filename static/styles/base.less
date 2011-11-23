@@ -1,0 +1,122 @@
+
+@import "bootstrap/bootstrap.less";
+
+@pink: #ee88cd;
+@fresh_green: #558822;
+@brown: #57470c;
+@white: #fff;
+@gray: #777;
+@dark_grey: #373c40;
+@blue: #011C26;
+@background: #F4F5F5;
+@black : #000;
+@white : #fff;
+@seagreen:#588c8c;
+
+body {
+  color: @gray;
+  background: @white;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0; }
+
+p {
+  color: @gray; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: @blue;
+  font-family: "georgia", "" Times New Roman "";
+}
+
+ul {
+  color: @gray;
+}
+
+a {
+  color: @fresh_green;
+  text-decoration: none; }
+  a.block {
+    display: block;
+    padding: 1%;
+    font-size: 140%;
+    border-bottom: 1px solid #cccccc; }
+
+dl dt {
+    margin-top: 10px;
+    font-size: 120%;
+    color: @fresh_green;
+}
+
+#epic {
+    background: @background;
+    padding: 1em;
+    border: 1px solid #e8e9e9;
+    margin-bottom: 1.5em;
+
+    p {
+        font-size: 1.5em;
+    }
+}
+
+.others {
+  background: #dddddd;
+  padding: 5px;
+}
+
+#fold {
+  background: #f4f5f5 url("../images/gradient.png") repeat-x 0% 0%; }
+
+#stuff {
+    a {
+        display: block;
+    }
+    img {
+        margin: 0;
+    }
+}
+
+#footer, #statements {
+  margin-top: 10px;
+  padding-top: 5px; }
+
+#footer {
+  background: #011c26; }
+  #footer h3 {
+    color: #588c8c; }
+  #footer img {
+    margin: 0;
+    float: none; }
+
+#agile_manifesto{
+    li {
+        list-style-type: none;
+    color: #333333;
+    }
+    strong {
+        font-size: 120%;
+    }
+}
+
+#header {
+  border-top: 20px solid #011c26;
+}
+
+
+.project {
+  border:3px solid @blue;
+  .border-radius();
+  margin-bottom:5px;
+
+  h3 {
+    padding:5px;
+    background:@grayLighter;
+  }
+  p {
+    padding:5px;
+  }
+  .foot {
+    border-top:1px solide @gray;
+    background:@grayLighter;
+    margin-bottom:0;
+  }
+}
