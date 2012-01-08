@@ -2362,6 +2362,9 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
   -moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
   box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
 }
+.tabla {
+  min-height: 300px;
+}
 body {
   color: #777777;
   background: #ffffff;
@@ -2460,7 +2463,24 @@ dl dt {
   padding: 5px;
 }
 .project .foot {
-  border-top: 1px solide #777777;
+  border-top: 1px solid #777777;
   background: #e6e6e6;
   margin-bottom: 0;
+}
+.projects img {
+  float: left;
+}
+.v23 img {
+  float: right;
+  margin-left: 4px;
+}
+.imgbar img {
+  width: 156px;
+}
+.actions {
+  background: #011c26;
+  border-top: 1px solid #588c8c;
+}
+.actions input {
+  background-color: #011c26;
 }

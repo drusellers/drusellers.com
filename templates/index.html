@@ -10,13 +10,8 @@
         <link title="drusellers-rss" type="application/rss+xml" rel="alternate" href="http://feeds.feedburner.com/drusellers" />
         <link title="drusellers-atom" type="application/atom+xml" rel="alternate" href="http://feeds.feedburner.com/drusellers" />
 
-        <link rel="stylesheet" href="static/styles/reset.css" type="text/css" media="screen" />
-        <link rel="stylesheet" href="static/styles/text.css" type="text/css" media="screen" />
         <link rel="stylesheet" href="static/styles/960.css" type="text/css" media="screen" />
-        <link rel="stylesheet" href="static/styles/fonts.css" type="text/css" media="screen" />
-        <link rel="stylesheet" href="static/styles/formalize.css" type="text/css" media="screen" />
 
-        <link rel="stylesheet" href="{{url_for('static', filename='styles/base.css')}}" type="text/css" media="screen" />
         {% assets "all-css" %}
         <link rel="stylesheet" href="{{ASSET_URL}}" type="text/css" media="screen" />
         {% endassets %}
@@ -30,21 +25,18 @@
         <!-- http://www.wallst.com/business.asp - content ideas-->
         <div id="header">
             <div class="container_12">
-                <div class="grid_8">
+                <div class="grid_10">
                     <img src="static/images/logo-black.png" alt="Dru Sellers" />
                 </div>
-                <div class="grid_4 omega">
+                <div class="grid_2 omega">
                     <div id="hcard-Dru-Sellers" class="vcard">
                         <span class="fn">Dru Sellers</span>
-                        <div class="email">dru {at} drusellers {dot} com</div>
+                        <div class="email"><a href="mailto:dru@drusellers.com">dru@drusellers.com</a></div>
                         <div class="twitter"><a href="http://twitter.com/drusellers">@drusellers</a></div>
-                        <div class="blog"><a href="http://drusellers.codebetter.com/">blog</a></div>
                         <div class="adr">
                             <div class="street-address"></div>
-                            <span class="locality">Austin</span>
-                            , 
+                            <span class="locality">Austin</span>,
                             <span class="region">TX</span>
-                            , 
                             <span class="postal-code">78759</span>
                             <span class="country-name">USA</span>
                         </div>
@@ -53,126 +45,105 @@
                 </div>
             </div>
         </div><!-- /header -->
+        <div class="container_12 tabla">
+          <h1>A Curious Mind</h1>
+          <div class="imgbar" class="grid_12">
+            <img src="/static/images/home_1.png" />
+            <img src="/static/images/home_2.png" />
+            <img src="/static/images/home_3.png" />
+            <img src="/static/images/home_4.png" />
+            <img src="/static/images/home_5.png" />
+            <img src="/static/images/home_6.png" />
+          </div>
+          <div class="grid_3">
+            <h2>Code </h2>
+            <p>Code. Software Development. Geek. Yup, that sounds like me. If you want to follow along with my 
+            adventures in code, you can find me over at <a href="http://codebetter.com/drusellers">CodeBetter</a> </p>
+            <p>You can also see some of my work at: <a href="http://github.com/drusellers">github</a></p>
+          </div>
+          <div class="grid_3">
+            <h2>CrossFit</h2>
+            <p>On top of being a software developer, I am also an avid participant in amateur level CrossFit competitions. 
+               I love the sport and the people that I have met. I train at <a href="http://www.crossfitcentral.com">
+               CrossFit Central</a> in Austin, TX.
+            </p>
+          </div>
+          <div class="grid_3">
+            <h2>Quotes </h2>
+              <p>I collect inspirational quotes: <a href="http://drusellers.tumblr.com">here</a></p>
+          </div>
+          <div class="grid_3 omega v23">
+            <h2>V23 Athletics</h2>
+            <p><img src="/static/images/v23.png" /> I have also started my own appearal company, called v23 athletics. Our goal is to bring top of the line fabrics to the seekers of fitness. aoeu a oeu aoe ua oeu a oeu ao eu aoeu aoe. </p>
+          </div>
+        </div>
+            <hr/>
         <div class="container_12">
-            <hr />
-            <div class="grid_4">
-                <h2>Systems</h2>
-                <img src="static/images/profile.jpg" alt="Me in my new suit." />
-                <p>A business-focused Solutions Architect with extensive Enterprise Architecture and application development skills. Understands the fundamentals of business processes and capable of architecting solutions to enable them. Deep understanding of the .Net platform. Recognized thought leader in the .Net community. Outstanding problem solver. Heavily sought after for architectural guidance and technical solutions. Responsible for defining Enterprise Architecture including business, application, information, and technical for a $65 billion dollar financial institution.</p>
-                <p><img src="static/images/altdotnet-logo-r.png" /></p>
-                <p><img src="static/images/python-logo.gif" /></p>
+          <div class="grid_12">
+            <h3>The Book</h3>
+          </div>
+          <div class="grid_3">
+            <p>I am currently trying to write a book. My goal is to publish the book on this site as I finish sections of it.</p>
+          </div>
+          <div class="grid_9 omega">
+            <p><a href="#">Chapter 1</a></p>
+            <p><a href="#">Chapter 2</a></p>
 
-            </div>
-            <div class="grid_4">
-                <h2>Fitness</h2>
-                <img src="static/images/profile.jpg" alt="Me in my new suit." />
-                <p>I may never be able to do <a href="http://www.youtube.com/watch?v=sFcTSmaz4Oc&amp;feature=fvw">these stunts</a>, but I do know that I wake up every day trying to figure out how I can bring this to software development and systems analysis.</p>
-                <p><a href="http://www.youtube.com/watch?v=Jal4OkZtz8g&feature=player_embedded">How bad do you want it?</a></p>
-                <p><img src="static/images/crossfitcentral.jpg" /></p>
-            </div>
-            <div class="grid_4">
-                <h2>Projects</h2>
-                <div class="project">
-                    <h3>MassTransit</h3>
-                    <p>About</p>
-                    <p class="foot"><a href="#">Link</a></p>
-                </div>
-                <div class="project">
-                    <h3>Topshelf</h3>
-                    <p>About</p>
-                    <p class="foot"><a href="#">Link</a></p>
-                </div>
-                <div class="project">
-                    <h3>Routamaka</h3>
-                    <p>An alternative routing engine for ASP.Net applications.</p>
-                    <p class="foot"><a href="#">Link</a></p>
-                </div>
-            </div>
-            <hr/>
-            <div id="fold">
-                <div class="grid_4">	
-                    <h3>Media</h3>
-                    <ul>
-                        <li><a href="http://herdingcode.com/?p=272">Herding Code: Nu</a></li>
-                        <li><a href="http://vimeo.com/11252029">A developer's take on messaging</a></li>
-                        <li><a href="http://elegantcode.com/2009/03/18/code-cast-25-masstransit/">Elegant Code Cast: MassTransit</a></li>
-                        <li><a href="http://www.hanselminutes.com/default.aspx?showID=129">Appearance on Hanselminutes</a></li>
-                    </ul>
-                </div>
-                <div class="grid_4">
-                    <h3>Projects</h3>
-                    <ul>
-                        <li><a href="http://masstransit-project.com/">MassTransit</a></li>
-                        <li><a href="http://topshelf-project.com/">Topshelf</a></li>
-                        <li><a href="http://magnum-project.com/">Magnum</a></li>
-                        <li><a href="https://github.com/chucknorris">chuck</a>: uppercut, dropkick, roundhouse</li>
-                        <li><a href="https://github.com/drusellers/hawkeye">klinger</a></li>
-                        <li><a href="http://fubu-project.org/">The Fubu Stack (MVC, Core, Bottles)</a></li>
-                        <li>nu/nupack/nuget</li>
-                    </ul>
-                </div>
-                <div class="grid_4 omega">
-                    <img src="static/images/ineta" alt="Ineta Community Champion" />
-                </div>
-            </div>
-            <hr/>
-            <h5>Other Outlets</h5>
-            <div class="grid_3">
-                <h6>Posts</h6>
-                <ul>
-                    {% for p in posts %}
-                    <li>{{ p.title }}</li>
-                    {% endfor %}
-                </ul>
-            </div>
-            <div class="grid_3">
-                <h6>Tweets</h6>
-                <ul>
-                    {% for t in tweets %}
-                    <li>{{ t.title }}</li>
-                    {% endfor %}
-                </ul>
-            </div>
-            <div class="grid_3">
-                <h6>Open Source</h6>
-                <ul>
-                    {% for c in commits %}
-                    <li>{{ c.title }}</li>
-                    {% endfor %}
-                </ul>
-            </div>
-            <div class="grid_3 omega">
-                <h6><a href="http://drusellers.tumblr.com">WodLog</a></h6>
-                <ul>
-                    {% for l in log %}
-                    <li>{{ l.title }}</li>
-                    {% endfor %}
-                </ul>
-            </div>
+          </div>
+        </div>
+        <div class="container_12 projects">
+          <div class="grid_12">
+            <h3>OSS Projects</h3>
+          </div>
+          <div class="grid_3">
+            <p>I am also a frequent contributor to open source software projects, as well as the maintainer on several of my own.</p>
+          </div>
+          <div class="grid_3">
+            <p><a target="_blank" href="http://masstransit-project.com/">MassTransit</a></p>
+            <p><img src="/static/images/masstransit.png" />A framework for hosting event driven code responding to durable messaging</p>
+          </div>
+          <div class="grid_3">
+            <p><a target="_blank" href="http://topshelf-project.com">Topshelf</a></p>
+            <p><img src="/static/images/topshelf.png"/> An framework for simplifing service hosting on the Windows and Unix operating systems</p>
+
+          </div>
+          <div class="grid_3 omega">
+            <p><a target="_blank" href="http://fubu-project.org/">FubuMVC</a></p>
+            <p><img src="/static/images/fubumvc.png" /> An alternative web framework for building complex web applications</p>
+          </div>
         </div>
         <div id="footer">
             <div class="container_12">
                 <div class="grid_4">
                     <h3>Contact Me</h3>
-                    <form>
-                        <dl>
-                            <dt><label>Name</label></dt>
-                            <dd><input type="text" name="name" /></dd>
-
-                            <dt><label>Email</label></dt>
-                            <dd><input type="email" name="email" /></dd>
-
-                            <dt><label>Message</label></dt>
-                            <dd><textarea name="message" rows="10"></textarea></dd>
-                        </dl>
-
-                        <input type="submit" value="Send" />
+                    <form class="form-stacked" action="/send_email" method="POST">
+                      <div class="clearfix">
+                        <label>Name</label>
+                        <div class="input">
+                          <input type="text" name="name" />
+                        </div>
+                      </div>
+                      <div class="clearfix">
+                        <label>Email</label>
+                        <div class="input">
+                          <input type="email" name="email" />
+                        </div>
+                      </div>
+                      <div class="clearfix"> 
+                        <label>Message</label>
+                        <div class="input">
+                          <textarea name="message" rows="10"></textarea>
+                        </div>
+                      </div>
+                      <div class="actions">
+                        <input type="submit" value="Send" class="btn" />
+                      </div>
                     </form>
                 </div>
                 <div class="grid_4">
                     <h3>Props</h3>
                     <p>Logo design by the <a href="http://www.theagilebadger.com">Agile Badger</a></p>
-                    <p>Color inspired by '<a href="http://kuler.adobe.com/#themeID/1185348">Keep the Change</a>'</p>
+                    <p>Colors inspired by '<a href="http://kuler.adobe.com/#themeID/1185348">Keep the Change</a>'</p>
                 </div>
                 <div class="grid_4 omega">
                     <h3>A little zen</h3>

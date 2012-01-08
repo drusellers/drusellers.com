@@ -35,5 +35,15 @@ def hello():
 #            posts=take(10, posts),
 #            log=take(10, log))
 
+@app.route('/skills')
+def skills():
+    return render_template('skills.html')
+
+@app.route('/send_email', methods=['POST'])
+def send_email(name, email, message):
+    #redirect to hello?
+    #need to figure out to send emails on heroku
+    pass
+
 if __name__ == '__main__':
     app.run()
