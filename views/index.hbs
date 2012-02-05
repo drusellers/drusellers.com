@@ -10,25 +10,21 @@
         <link title="drusellers-rss" type="application/rss+xml" rel="alternate" href="http://feeds.feedburner.com/drusellers" />
         <link title="drusellers-atom" type="application/atom+xml" rel="alternate" href="http://feeds.feedburner.com/drusellers" />
 
-        <link rel="stylesheet" href="static/styles/960.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="/styles/css/base.css" type="text/css" media="screen" />
 
-        {% assets "all-css" %}
-        <link rel="stylesheet" href="{{ASSET_URL}}" type="text/css" media="screen" />
-        {% endassets %}
-
-        <script type="text/javascript" src="static/scripts/jquery-1.6.2.min.js"></script>
-        <script type="text/javascript" src="static/scripts/jquery.formalize.js"></script>
+        <script type="text/javascript" src="scripts/jquery-1.6.2.min.js"></script>
+        <script type="text/javascript" src="scripts/jquery.formalize.js"></script>
     </head>
     <body>
         <!-- inspiration: http://secondandpark.com/ -->
         <!-- http://www.joyent.com/ - style-->
         <!-- http://www.wallst.com/business.asp - content ideas-->
         <div id="header">
-            <div class="container_12">
-                <div class="grid_10">
-                    <img src="static/images/logo-black.png" alt="Dru Sellers" />
+            <div class="center">
+                <div class="logo">
+                    <img src="images/logo-black.png" alt="Dru Sellers" />
                 </div>
-                <div class="grid_2 omega">
+                <div class="details">
                     <div id="hcard-Dru-Sellers" class="vcard">
                         <span class="fn">Dru Sellers</span>
                         <div class="email"><a href="mailto:dru@drusellers.com">dru@drusellers.com</a></div>
@@ -45,39 +41,39 @@
                 </div>
             </div>
         </div><!-- /header -->
-        <div class="container_12 tabla">
+        <div class="main_content">
           <h1>A Curious Mind</h1>
-          <div class="imgbar" class="grid_12">
-            <img src="/static/images/home_1.png" />
-            <img src="/static/images/home_2.png" />
-            <img src="/static/images/home_3.png" />
-            <img src="/static/images/home_4.png" />
-            <img src="/static/images/home_5.png" />
-            <img src="/static/images/home_6.png" />
+          <div class="imgbar">
+            <img src="/images/home_1.png" />
+            <img src="/images/home_2.png" />
+            <img src="/images/home_3.png" />
+            <img src="/images/home_4.png" />
+            <img src="/images/home_5.png" />
+            <img src="/images/home_6.png" />
           </div>
-          <div class="grid_3">
+          <div class="code">
             <h2>Code </h2>
             <p>Code. Software Development. Geek. Yup, that sounds like me. If you want to follow along with my 
             adventures in code, you can find me over at <a href="http://codebetter.com/drusellers">CodeBetter</a> </p>
             <p>You can also see some of my work at: <a href="http://github.com/drusellers">github</a></p>
           </div>
-          <div class="grid_3 crossfit">
+          <div class="crossfit">
             <h2>CrossFit</h2>
-            <p><img src="/static/images/mohawk.png" />On top of being a software developer, I am also an avid participant in amateur level CrossFit competitions. 
+            <p><img src="/images/mohawk.png" />On top of being a software developer, I am also an avid participant in amateur level CrossFit competitions. 
                I love the sport and the people that I have met. I train at <a href="http://www.crossfitcentral.com">
                CrossFit Central</a> in Austin, TX.
             </p>
           </div>
-          <div class="grid_3">
+          <div class="quotes">
             <h2>Quotes </h2>
               <p>I collect inspirational quotes: <a href="http://drusellers.tumblr.com">here</a></p>
           </div>
-          <div class="grid_3 omega v23">
+          <div class="v23">
             <h2>V23 Athletics</h2>
-            <p><img src="/static/images/v23.png" /> I have also started my own apparel company, called <a href="http://v23athletics.com">V23 Athletics</a>. Our goal is to bring top of the line fabrics to the seekers of fitness.</p>
+            <p><img src="/images/v23.png" /> I have also started my own apparel company, called <a href="http://v23athletics.com">V23 Athletics</a>. Our goal is to bring top of the line fabrics to the seekers of fitness.</p>
           </div>
         </div>
-            <hr/>
+        <hr/>
 <!--
         <div class="container_12">
           <div class="grid_12">
@@ -93,30 +89,29 @@
           </div>
         </div>
 -->
-        <div class="container_12 projects">
-          <div class="grid_12">
-            <h3>OSS Projects</h3>
-          </div>
-          <div class="grid_3">
+        <div class="projects">
+          <h3>OSS Projects</h3>
+          <div class="project">
             <p>I am also a frequent contributor to open source software projects, as well as the maintainer on several of my own.</p>
           </div>
-          <div class="grid_3">
+          <div class="project">
             <p><a target="_blank" href="http://masstransit-project.com/">MassTransit</a></p>
-            <p><img src="/static/images/masstransit.png" />A framework for hosting event driven code responding to durable messaging</p>
+            <p><img src="/images/masstransit.png" />A framework for hosting event driven code responding to durable messaging</p>
           </div>
-          <div class="grid_3">
+          <div class="project">
             <p><a target="_blank" href="http://topshelf-project.com">Topshelf</a></p>
-            <p><img src="/static/images/topshelf.png"/> An framework for simplifing service hosting on the Windows and Unix operating systems</p>
+            <p><img src="/images/topshelf.png"/> An framework for simplifing service hosting on the Windows and Unix operating systems</p>
 
           </div>
-          <div class="grid_3 omega">
+          <div class="project">
             <p><a target="_blank" href="http://fubu-project.org/">FubuMVC</a></p>
-            <p><img src="/static/images/fubumvc.png" /> An alternative web framework for building complex web applications</p>
+            <p><img src="/images/fubumvc.png" /> An alternative web framework for building complex web applications</p>
           </div>
         </div>
+        <br style="clear:both" />
         <div id="footer">
-            <div class="container_12">
-                <div class="grid_4">
+            <div class="center">
+                <div class="contact_form">
 <!--
                     <h3>Contact Me</h3>
                     <form class="form-stacked" action="/send_email" method="POST">
@@ -144,12 +139,12 @@
                     </form>
 -->
                 </div>
-                <div class="grid_4">
+                <div class="props">
                     <h3>Props</h3>
                     <p>Logo design by the <a href="http://www.theagilebadger.com">Agile Badger</a></p>
                     <p>Colors inspired by '<a href="http://kuler.adobe.com/#themeID/1185348">Keep the Change</a>'</p>
                 </div>
-                <div class="grid_4 omega">
+                <div class="zen">
                     <h3>A little zen</h3>
                     <p>Water is fluid, soft and yielding. But water will wear away rock, which is rigid and cannot yield. As a rule, whatever is fluid, soft and yielding will overcome whatever is rigid and hard. This is another paradox: what is soft is strong.</p>
                     <p><em>Lao-tzu</em></p>
@@ -162,7 +157,7 @@
                     something you love.</p>
                     <p><em>Me via Jeff McKinney and Carl Paoli</em></p>
                 </div>
-                <div class="grid_12">
+                <div class="boring">
                     <h3>Boring</h3>
                     <p>
                     Copyright since &copy;1997<br/>

@@ -1,0 +1,133 @@
+body {
+  width: 100%;
+  *zoom: 1; }
+  body:before, body:after {
+    content: "";
+    display: table; }
+  body:after {
+    clear: both; }
+
+body {
+  color: #777777;
+  background: white;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0; }
+
+p {
+  color: #777777; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #011c26;
+  font-family: "georgia", "" Times New Roman ""; }
+
+ul {
+  color: #777777; }
+
+a {
+  color: #558822;
+  text-decoration: none; }
+
+a.block {
+  display: block;
+  padding: 1%;
+  font-size: 140%;
+  border-bottom: 1px solid #cccccc; }
+
+dl dt {
+  margin-top: 10px;
+  font-size: 120%;
+  color: #558822; }
+
+hr {
+  clear: both;
+  display: block;
+  margin: 20px 0 19px;
+  border: 0;
+  border-bottom: 1px solid #eeeeee;
+  border-style: inset; }
+
+#header {
+  border-top: 20px solid #011c26; }
+  #header .center {
+    margin: 0 auto;
+    width: 960px; }
+  #header .logo {
+    display: inline;
+    float: left;
+    width: 780px;
+    margin: 0 10px; }
+  #header .details {
+    display: inline;
+    float: left;
+    width: 140px;
+    margin: 0 10px; }
+
+.main_content {
+  width: 960px;
+  margin: 0 auto;
+  min-height: 300px; }
+  .main_content .imgbar {
+    display: inline;
+    float: left;
+    width: 940px;
+    margin: 0 10px; }
+    .main_content .imgbar img {
+      width: 153px; }
+  .main_content .code, .main_content .crossfit, .main_content .v23, .main_content .quotes {
+    display: inline;
+    float: left;
+    width: 220px;
+    margin: 0 10px; }
+    .main_content .code img, .main_content .crossfit img, .main_content .v23 img, .main_content .quotes img {
+      float: right;
+      margin-left: 4px; }
+
+.projects {
+  width: 960px;
+  margin: 0 auto; }
+  .projects h3 {
+    display: inline;
+    float: left;
+    width: 940px;
+    margin: 0 10px; }
+  .projects .project {
+    display: inline;
+    float: left;
+    width: 220px;
+    margin: 0 10px; }
+    .projects .project img {
+      float: left; }
+
+#footer {
+  background: #011c26;
+  margin-top: 10px;
+  padding-top: 5px; }
+  #footer .center {
+    margin: 0 auto;
+    width: 960px; }
+  #footer h3 {
+    color: #588c8c; }
+  #footer img {
+    margin: 0;
+    float: none; }
+  #footer .contact_form {
+    display: inline;
+    float: left;
+    width: 300px;
+    margin: 0 10px; }
+  #footer .props {
+    display: inline;
+    float: left;
+    width: 300px;
+    margin: 0 10px; }
+  #footer .zen {
+    display: inline;
+    float: left;
+    width: 300px;
+    margin: 0 10px; }
+  #footer .boring {
+    display: inline;
+    float: left;
+    width: 940px;
+    margin: 0 10px; }

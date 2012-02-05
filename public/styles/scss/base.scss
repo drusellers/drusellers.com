@@ -1,0 +1,138 @@
+@import "_grid";
+
+$pink: #ee88cd;
+$fresh_green: #558822;
+$brown: #57470c;
+$white: #fff;
+$gray: #777;
+$dark_grey: #373c40;
+$blue: #011C26;
+$background: #F4F5F5;
+$black : #000;
+$white : #fff;
+$seagreen:#588c8c;
+$grayLighter:#eee;
+
+body {
+  color: $gray;
+  background: $white;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0; }
+
+p {
+  color: $gray; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: $blue;
+  font-family: "georgia", "" Times New Roman "";
+}
+
+ul {
+  color: $gray;
+}
+
+a {
+  color: $fresh_green;
+  text-decoration: none; }
+  a.block {
+    display: block;
+    padding: 1%;
+    font-size: 140%;
+    border-bottom: 1px solid #cccccc; }
+
+dl dt {
+    margin-top: 10px;
+    font-size: 120%;
+    color: $fresh_green;
+}
+hr {
+    clear:both;
+    display:block;
+    margin: 20px 0 19px;
+    border:0;
+    border-bottom:1px solid $grayLighter;
+    border-style:inset;
+}
+#header {
+    border-top: 20px solid #011c26;
+
+    .center {
+        margin:0 auto;
+        width:960px;
+    }
+
+    .logo {
+        @include column(10);
+    }
+    .details {
+        @include column(2);
+    }
+}
+
+.main_content {
+    width:960px;
+    margin: 0 auto;
+    min-height:300px;
+
+    .imgbar {
+        @include column(12);
+
+        img {
+            width:153px;
+        }
+    }
+    .code, .crossfit, .v23, .quotes {
+        @include column(3);
+
+        img {
+            float:right;
+            margin-left:4px;
+        }
+    }
+}
+
+.projects {
+    width:960px;
+    margin: 0 auto;
+
+    h3 {
+        @include column(12);
+    }
+    .project {
+        @include column(3);
+
+        img {
+            float:left;
+        }
+    }
+}
+
+#footer {
+    background: #011c26;
+    margin-top: 10px;
+    padding-top: 5px; 
+    .center {
+        margin: 0 auto;
+        width:960px;
+    }
+    h3 {
+        color:#588c8c;
+    }
+    img {
+        margin: 0;
+        float: none;
+    }
+    .contact_form {
+        @include column(4);
+    }
+    .props {
+        @include column(4);
+    }
+    .zen {
+        @include column(4);
+    }
+    .boring {
+        @include column(12);
+    }
+}

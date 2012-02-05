@@ -1,1 +1,1 @@
-web: python runserver.py
+web: node app.js
