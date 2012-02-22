@@ -4,4 +4,15 @@ module.exports = function(app) {
       title: 'Express'
     })
   });
+
+  app.get('/prs', function(req,res){
+    res.render('prboard', {
+      scores : [
+        {
+          movement:'Deadlift',
+          score:'320lbs'
+        }
+      ]
+    });
+  });
 };

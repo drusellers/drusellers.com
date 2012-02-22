@@ -1,4 +1,5 @@
-@import "_grid";
+@import "grid";
+@import "font";
 
 $pink: #ee88cd;
 $fresh_green: #558822;
@@ -16,9 +17,9 @@ $grayLighter:#eee;
 body {
   color: $gray;
   background: $white;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-bottom: 0; }
+  padding-bottom: 0; 
+  margin:0;
+}
 
 p {
   color: $gray; }
@@ -112,6 +113,8 @@ hr {
     background: #011c26;
     margin-top: 10px;
     padding-top: 5px; 
+    overflow:hidden;
+
     .center {
         margin: 0 auto;
         width:960px;
@@ -135,4 +138,10 @@ hr {
     .boring {
         @include column(12);
     }
+}
+
+#prboard {
+	td {
+		font-family:'DigitaldreamRegular';
+	}
 }
