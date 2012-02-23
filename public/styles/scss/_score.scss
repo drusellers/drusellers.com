@@ -1,0 +1,35 @@
+.scoreitem {
+  -webkit-animation: grow 1s 1; /* Saf5, Chrome */
+     -moz-animation: grow 1s 1; /* FF5+ */
+      -ms-animation: grow 1s 1; /* IE10 */
+}
+
+@-webkit-keyframes grow {
+  0%   { opacity:0;
+  @include scale(0.8)
+  }
+  50%  { opacity:0.5;
+
+   }
+   75% {
+    @include scale(1.2);
+   }
+  100% { opacity:1;
+
+  @include scale(1);
+  }
+}
+@-moz-keyframes grow {
+  0%   { opacity:0; }
+  50%  { opacity:0.5; }
+  100% { opacity:1;
+  @include scale(1);
+  }
+}
+@-ms-keyframes grow {
+  0%   { opacity:0; }
+  50%  { opacity:0.5; }
+  100% { opacity:1;
+    @include scale(1);
+  }
+}

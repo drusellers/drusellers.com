@@ -6,3 +6,4 @@ lib
 *.pyc
 node_modules
 .sass-cache
+.idea

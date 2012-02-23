@@ -12,8 +12,9 @@
 
         <link rel="stylesheet" href="/styles/css/base.css" type="text/css" media="screen" />
 
-        <script type="text/javascript" src="/scripts/jquery-1.6.2.min.js"></script>
-        <script type="text/javascript" src="/scripts/jquery.formalize.js"></script>
+        <script type="text/javascript" src="/scripts/jquery.js"></script>
+        <script type="text/javascript" src="/scripts/require.js"></script>
+        <script type="text/javascript" src="/scripts/loader.js"></script>
     </head>
     <body>
 
@@ -26,10 +27,12 @@
   <tr>
   </thead>
   <tbody>
+    {{#each scores}}
     <tr>
-      <td>Squats</td>
-      <td>320lbs</td>
+      <td>{{movement}}</td>
+      <td class="scoreitem" data-module="score" data-params='{ "value":{{score}},"type":"dru" }'>0</td>
     </tr>
+    {{/each}}
   </tbody>
 </table>
 
