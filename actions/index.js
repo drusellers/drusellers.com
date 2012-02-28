@@ -13,6 +13,14 @@ module.exports = function (app) {
                     score:'320'
                 },
                 {
+                  movement:'Backsquat',
+                  score:'250'
+                },
+                {
+                  movement:'Shoulder Press',
+                  score:'145'
+                },
+                {
                     movement:'Clean',
                     score:'210'
                 }
