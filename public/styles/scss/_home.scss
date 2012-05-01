@@ -1,0 +1,85 @@
+
+#header {
+    border-top: 20px solid #011c26;
+
+    .center {
+        margin:0 auto;
+        width:960px;
+    }
+
+    .logo {
+        @include column(10);
+    }
+    .details {
+        @include column(2);
+    }
+}
+
+.main_content {
+    width:960px;
+    margin: 0 auto;
+    min-height:300px;
+
+    .imgbar {
+        @include column(12);
+
+        img {
+            width:153px;
+        }
+    }
+    .code, .crossfit, .v23, .quotes {
+        @include column(3);
+
+        img {
+            float:right;
+            margin-left:4px;
+        }
+    }
+}
+
+.projects {
+    width:960px;
+    margin: 0 auto;
+
+    h3 {
+        @include column(12);
+    }
+    .project {
+        @include column(3);
+
+        img {
+            float:left;
+        }
+    }
+}
+
+#footer {
+    background: #011c26;
+    margin-top: 10px;
+    padding-top: 5px;
+    overflow:hidden;
+
+    .center {
+        margin: 0 auto;
+        width:960px;
+    }
+    h3 {
+        color:#588c8c;
+    }
+    img {
+        margin: 0;
+        float: none;
+    }
+    .contact_form {
+        @include column(4);
+    }
+    .props {
+        @include column(4);
+    }
+    .zen, .birds {
+        @include column(4);
+    }
+    .boring {
+        @include column(12);
+    }
+}

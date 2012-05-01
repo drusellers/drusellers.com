@@ -7,3 +7,9 @@
              filter: progid:DXImageTransform.Microsoft.Matrix(/* IE6–IE9 */
                      M11=0.9999025240093042, M12=-0.013962180339145272, M21=0.013962180339145272, M22=0.9999025240093042,SizingMethod='auto expand');
 }
+
+@mixin rounded(){
+     -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+}

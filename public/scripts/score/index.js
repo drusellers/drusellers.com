@@ -16,6 +16,7 @@ define([], function(){
             },100);
         } else {
             self.html(goal);
+            self.addClass('done')
         }
     }
 });

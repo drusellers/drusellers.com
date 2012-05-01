@@ -65,13 +65,36 @@ body {
   font-weight: normal;
   font-style: normal; }
 
-.scoreitem {
-  -webkit-animation: grow 1s 1;
-  /* Saf5, Chrome */
-  -moz-animation: grow 1s 1;
-  /* FF5+ */
-  -ms-animation: grow 1s 1;
-  /* IE10 */ }
+#pr {
+  background: #222; }
+  #pr h1 {
+    color: #222;
+    margin: 0;
+    font-size: 3em; }
+  #pr .main_content {
+    margin-top: 30px;
+    background: #eee;
+    padding: 10px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; }
+  #pr #prboard {
+    width: 100%;
+    font-size: 3em; }
+    #pr #prboard th {
+      text-align: left; }
+    #pr #prboard td {
+      font-family: 'DigitaldreamRegular'; }
+  #pr .scoreitem {
+    -webkit-animation: grow 1s 1;
+    /* Saf5, Chrome */
+    -moz-animation: grow 1s 1;
+    /* FF5+ */
+    -ms-animation: grow 1s 1;
+    /* IE10 */ }
+    #pr .scoreitem.done {
+      font-weight: bold;
+      color: #a00; }
 
 @-webkit-keyframes grow {
   0% {
@@ -134,45 +157,6 @@ body {
     -o-transform: scale(1);
     transform: scale(1);
     filter: progid:DXImageTransform.Microsoft.Matrix(/* IE6–IE9 */                      M11=0.9999025240093042, M12=-0.013962180339145272, M21=0.013962180339145272, M22=0.9999025240093042,SizingMethod='auto expand'); } }
-
-body {
-  color: #777777;
-  background: white;
-  padding-bottom: 0;
-  margin: 0; }
-
-p {
-  color: #777777; }
-
-h1, h2, h3, h4, h5, h6 {
-  color: #011c26;
-  font-family: "georgia", "" Times New Roman ""; }
-
-ul {
-  color: #777777; }
-
-a {
-  color: #558822;
-  text-decoration: none; }
-
-a.block {
-  display: block;
-  padding: 1%;
-  font-size: 140%;
-  border-bottom: 1px solid #cccccc; }
-
-dl dt {
-  margin-top: 10px;
-  font-size: 120%;
-  color: #558822; }
-
-hr {
-  clear: both;
-  display: block;
-  margin: 20px 0 19px;
-  border: 0;
-  border-bottom: 1px solid #eeeeee;
-  border-style: inset; }
 
 #header {
   border-top: 20px solid #011c26; }
@@ -249,7 +233,7 @@ hr {
     float: left;
     width: 300px;
     margin: 0 10px; }
-  #footer .zen {
+  #footer .zen, #footer .birds {
     display: inline;
     float: left;
     width: 300px;
@@ -260,5 +244,41 @@ hr {
     width: 940px;
     margin: 0 10px; }
 
-#prboard td {
-  font-family: 'DigitaldreamRegular'; }
+body {
+  color: #777777;
+  background: white;
+  padding-bottom: 0;
+  margin: 0; }
+
+p {
+  color: #777777; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #011c26;
+  font-family: "georgia", "" Times New Roman ""; }
+
+ul {
+  color: #777777; }
+
+a {
+  color: #558822;
+  text-decoration: none; }
+
+a.block {
+  display: block;
+  padding: 1%;
+  font-size: 140%;
+  border-bottom: 1px solid #cccccc; }
+
+dl dt {
+  margin-top: 10px;
+  font-size: 120%;
+  color: #558822; }
+
+hr {
+  clear: both;
+  display: block;
+  margin: 20px 0 19px;
+  border: 0;
+  border-bottom: 1px solid #eeeeee;
+  border-style: inset; }

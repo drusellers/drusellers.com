@@ -16,25 +16,25 @@
         <script type="text/javascript" src="/scripts/require.js"></script>
         <script type="text/javascript" src="/scripts/loader.js"></script>
     </head>
-    <body>
-
-<h1>PR Board</h1>
-<table id="prboard">
-  <thead>
-  <tr>
-    <th>Movement</th>
-    <th>Score</th>
-  <tr>
-  </thead>
-  <tbody>
-    {{#each scores}}
-    <tr>
-      <td>{{movement}}</td>
-      <td class="scoreitem" data-module="score" data-params='{ "value":{{score}},"type":"dru" }'>0</td>
-    </tr>
-    {{/each}}
-  </tbody>
-</table>
-
+    <body id="pr">
+        <div class="main_content">
+            <h1>PR Board</h1>
+            <table id="prboard">
+              <thead>
+              <tr>
+                <th>Movement</th>
+                <th>Score</th>
+              <tr>
+              </thead>
+              <tbody>
+                {{#each scores}}
+                <tr>
+                  <td>{{movement}}</td>
+                  <td class="scoreitem" data-module="score" data-params='{ "value":{{score}},"type":"dru" }'>0</td>
+                </tr>
+                {{/each}}
+              </tbody>
+            </table>
+        </div>
 </body>
 </html>
