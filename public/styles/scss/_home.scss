@@ -1,67 +1,50 @@
 
+$darkblue:#011c26;
+
 #header {
-    border-top: 20px solid #011c26;
+    margin-top:40px;
 
     .center {
         margin:0 auto;
-        width:960px;
+        width:600px;
     }
 
     .logo {
-        @include column(10);
+        @include column(8);
     }
     .details {
-        @include column(2);
+        @include column(4);
     }
 }
 
-.main_content {
-    width:960px;
-    margin: 0 auto;
-    min-height:300px;
 
-    .imgbar {
-        @include column(12);
+#imgbar {
+    margin-top:40px;
 
-        img {
-            width:153px;
-        }
-    }
-    .code, .crossfit, .v23, .quotes {
-        @include column(3);
-
-        img {
-            float:right;
-            margin-left:4px;
-        }
-    }
-}
-
-.projects {
-    width:960px;
-    margin: 0 auto;
-
-    h3 {
+    .images {
         @include column(12);
     }
-    .project {
-        @include column(3);
 
-        img {
-            float:left;
-        }
+    .center {
+        margin:0 auto;
+        width:600px;
+    }
+
+    img {
+        width:137px;
     }
 }
+
 
 #footer {
-    background: #011c26;
-    margin-top: 10px;
+    background: #fff;
+    margin-top: 40px;
     padding-top: 5px;
     overflow:hidden;
 
     .center {
         margin: 0 auto;
-        width:960px;
+        width:600px;
     }
     h3 {
         color:#588c8c;
@@ -70,7 +53,8 @@
         margin: 0;
         float: none;
     }
-    .contact_form {
+
+    .links {
         @include column(4);
     }
     .props {
