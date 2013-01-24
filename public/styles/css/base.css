@@ -251,54 +251,50 @@ body:after {
   margin: 0 auto;
   width: 600px;
 }
-/* line 33, ../scss/_home.scss */
-#imgbar img {
-  width: 137px;
-}
 
-/* line 39, ../scss/_home.scss */
+/* line 38, ../scss/_home.scss */
 #footer {
   background: #fff;
   margin-top: 40px;
   padding-top: 5px;
   overflow: hidden;
 }
-/* line 45, ../scss/_home.scss */
+/* line 44, ../scss/_home.scss */
 #footer .center {
   margin: 0 auto;
   width: 600px;
 }
-/* line 49, ../scss/_home.scss */
+/* line 48, ../scss/_home.scss */
 #footer h3 {
   color: #588c8c;
 }
-/* line 52, ../scss/_home.scss */
+/* line 51, ../scss/_home.scss */
 #footer img {
   margin: 0;
   float: none;
 }
-/* line 57, ../scss/_home.scss */
+/* line 56, ../scss/_home.scss */
 #footer .links {
   display: inline;
   float: left;
   width: 184px;
   margin: 0 8px;
 }
-/* line 60, ../scss/_home.scss */
+/* line 59, ../scss/_home.scss */
 #footer .props {
   display: inline;
   float: left;
   width: 184px;
   margin: 0 8px;
 }
-/* line 63, ../scss/_home.scss */
+/* line 62, ../scss/_home.scss */
 #footer .zen, #footer .birds {
   display: inline;
   float: left;
   width: 184px;
   margin: 0 8px;
 }
-/* line 66, ../scss/_home.scss */
+/* line 65, ../scss/_home.scss */
 #footer .boring {
   display: inline;
   float: left;
