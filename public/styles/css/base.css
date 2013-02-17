@@ -233,68 +233,70 @@ body:after {
   float: left;
   width: 184px;
   margin: 0 8px;
+  font-size: 0.92em;
+  text-align: right;
 }
 
-/* line 21, ../scss/_home.scss */
+/* line 23, ../scss/_home.scss */
 #imgbar {
-  margin-top: 40px;
+  margin-top: 30px;
 }
-/* line 24, ../scss/_home.scss */
+/* line 26, ../scss/_home.scss */
 #imgbar .images {
   display: inline;
   float: left;
   width: 584px;
   margin: 0 8px;
 }
-/* line 28, ../scss/_home.scss */
+/* line 30, ../scss/_home.scss */
 #imgbar .center {
   margin: 0 auto;
   width: 600px;
 }
 
-/* line 38, ../scss/_home.scss */
+/* line 40, ../scss/_home.scss */
 #footer {
   background: #fff;
-  margin-top: 40px;
+  margin-top: 20px;
   padding-top: 5px;
   overflow: hidden;
 }
-/* line 44, ../scss/_home.scss */
+/* line 46, ../scss/_home.scss */
 #footer .center {
   margin: 0 auto;
   width: 600px;
 }
-/* line 48, ../scss/_home.scss */
+/* line 50, ../scss/_home.scss */
 #footer h3 {
   color: #588c8c;
 }
-/* line 51, ../scss/_home.scss */
+/* line 53, ../scss/_home.scss */
 #footer img {
   margin: 0;
-  float: none;
+  float: left;
 }
-/* line 56, ../scss/_home.scss */
+/* line 58, ../scss/_home.scss */
 #footer .links {
   display: inline;
   float: left;
   width: 184px;
   margin: 0 8px;
 }
-/* line 59, ../scss/_home.scss */
+/* line 61, ../scss/_home.scss */
 #footer .props {
   display: inline;
   float: left;
   width: 184px;
   margin: 0 8px;
 }
-/* line 62, ../scss/_home.scss */
+/* line 64, ../scss/_home.scss */
 #footer .zen, #footer .birds {
   display: inline;
   float: left;
   width: 184px;
   margin: 0 8px;
 }
-/* line 65, ../scss/_home.scss */
+/* line 67, ../scss/_home.scss */
 #footer .boring {
   display: inline;
   float: left;
@@ -302,37 +304,44 @@ body:after {
   margin: 0 8px;
 }
 
-/* line 20, ../scss/base.scss */
+/* line 35, ../scss/base.scss */
 body {
   color: #777777;
   background: white;
   padding-bottom: 0;
   margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* line 27, ../scss/base.scss */
+/* line 43, ../scss/base.scss */
 p {
   color: #777777;
 }
 
-/* line 31, ../scss/base.scss */
+/* line 47, ../scss/base.scss */
 h1, h2, h3, h4, h5, h6 {
-  color: #011c26;
-  font-family: "georgia", "" Times New Roman "";
+  color: #00a1d9;
 }
 
-/* line 36, ../scss/base.scss */
+/* line 50, ../scss/base.scss */
+h3 {
+  font-size: 1.3em;
+  margin: 0;
+  line-height: 1em;
+}
+
+/* line 56, ../scss/base.scss */
 ul {
   color: #777777;
 }
 
-/* line 40, ../scss/base.scss */
+/* line 60, ../scss/base.scss */
 a {
-  color: #558822;
+  color: #30aab4;
   text-decoration: none;
 }
 
-/* line 43, ../scss/base.scss */
+/* line 63, ../scss/base.scss */
 a.block {
   display: block;
   padding: 1%;
@@ -340,14 +349,14 @@ a.block {
   border-bottom: 1px solid #cccccc;
 }
 
-/* line 49, ../scss/base.scss */
+/* line 69, ../scss/base.scss */
 dl dt {
   margin-top: 10px;
   font-size: 120%;
   color: #558822;
 }
 
-/* line 54, ../scss/base.scss */
+/* line 74, ../scss/base.scss */
 hr {
   clear: both;
   display: block;

@@ -1,8 +1,3 @@
-@import "mixins";
-@import "grid";
-@import "font";
-@import "score";
-@import "home";
 
 $pink: #ee88cd;
 $fresh_green: #558822;
@@ -17,11 +12,32 @@ $white : #fff;
 $seagreen:#588c8c;
 $grayLighter:#eee;
 
+//bahamas
+$color1:#003056;
+$color2:#04518c;
+$color3:#00A1D9;
+$color4:#47d9bf;
+$color5:#f2d03b;
+
+//$link_color:$fresh_green;
+//$heading_color: $blue;
+$link_color:lighten(#207178,15%);
+$heading_color: $color3;
+$copy_color:$gray;
+
+@import "mixins";
+@import "grid";
+@import "font";
+@import "score";
+@import "home";
+
+
 body {
-  color: $gray;
+  color: $copy_color;
   background: $white;
-  padding-bottom: 0; 
+  padding-bottom: 0;
   margin:0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 p {
@@ -29,16 +45,20 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: $blue;
-  font-family: "georgia", "" Times New Roman "";
+  color: $heading_color;
 }
+h3 {
+  font-size:1.3em;
+  margin:0;
+  line-height: 1em;
 
+}
 ul {
-  color: $gray;
+  color: $copy_color;
 }
 
 a {
-  color: $fresh_green;
+  color: $link_color;
   text-decoration: none; }
   a.block {
     display: block;
