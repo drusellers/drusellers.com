@@ -10,19 +10,31 @@ module.exports = function (app) {
             scores:[
                 {
                     movement:'Deadlift',
-                    score:'320'
+                    score:'365'
                 },
                 {
                   movement:'Backsquat',
-                  score:'250'
+                  score:'300'
                 },
                 {
                   movement:'Shoulder Press',
-                  score:'145'
+                  score:'155'
                 },
                 {
                     movement:'Clean',
-                    score:'210'
+                    score:'240'
+                },
+                {
+                    movement:'Snatch',
+                    score:'180'
+                },
+                {
+                    movement:'Front Squat',
+                    score:'250'
+                },
+                {
+                    movement:'Jerk',
+                    score:'240'
                 }
             ]
         });

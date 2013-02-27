@@ -25,6 +25,8 @@ $link_color:lighten(#207178,15%);
 $heading_color: $color3;
 $copy_color:$gray;
 
+@import "compass/css3";
+
 @import "mixins";
 @import "grid";
 @import "font";

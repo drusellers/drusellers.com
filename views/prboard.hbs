@@ -1,40 +1,41 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <meta charset="UTF-8">
-        <title>Dru Sellers</title>
+  <head>
+    <meta charset="UTF-8">
+    <title>Dru Sellers</title>
 
-        <link rel="openid.server" href="http://www.myopenid.com/server" />
-        <link rel="openid.delegate" href="http://drusellers.myopenid.com/" />
+    <link rel="openid.server" href="http://www.myopenid.com/server" />
+    <link rel="openid.delegate" href="http://drusellers.myopenid.com/" />
 
-        <link title="drusellers-rss" type="application/rss+xml" rel="alternate" href="http://feeds.feedburner.com/drusellers" />
-        <link title="drusellers-atom" type="application/atom+xml" rel="alternate" href="http://feeds.feedburner.com/drusellers" />
+    <link title="drusellers-rss" type="application/rss+xml" rel="alternate" href="http://feeds.feedburner.com/drusellers" />
+    <link title="drusellers-atom" type="application/atom+xml" rel="alternate" href="http://feeds.feedburner.com/drusellers" />
 
-        <link rel="stylesheet" href="/styles/css/base.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/styles/css/base.css" type="text/css" media="screen" />
 
-        <script type="text/javascript" src="/scripts/jquery.js"></script>
-        <script type="text/javascript" src="/scripts/require.js"></script>
-        <script type="text/javascript" src="/scripts/loader.js"></script>
-    </head>
-    <body id="pr">
-        <div class="main_content">
-            <h1>PR Board</h1>
-            <table id="prboard">
-              <thead>
+    <script type="text/javascript" src="/scripts/jquery.js"></script>
+    <script type="text/javascript" src="/scripts/require.js"></script>
+    <script type="text/javascript" src="/scripts/loader.js"></script>
+  </head>
+  <body id="pr">
+
+      <div class="main_content">
+        <h1>PR Board</h1>
+          <table id="prboard">
+            <thead>
+            <tr>
+              <th>Movement</th>
+              <th>Score</th>
+            <tr>
+            </thead>
+            <tbody>
+              {{#each scores}}
               <tr>
-                <th>Movement</th>
-                <th>Score</th>
-              <tr>
-              </thead>
-              <tbody>
-                {{#each scores}}
-                <tr>
-                  <td>{{movement}}</td>
-                  <td class="scoreitem" data-module="score" data-params='{ "value":{{score}},"type":"dru" }'>0</td>
-                </tr>
-                {{/each}}
-              </tbody>
-            </table>
-        </div>
-</body>
+                <td>{{movement}}</td>
+                <td class="scoreitem" data-module="score" data-params='{ "value":{{score}},"type":"dru" }'>0</td>
+              </tr>
+              {{/each}}
+            </tbody>
+          </table>
+      </div>
+  </body>
 </html>

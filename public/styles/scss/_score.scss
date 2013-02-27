@@ -1,5 +1,6 @@
 #pr {
     background:#222;
+    background-image:url(../../images/blurry.jpg);
 
     table {
 
@@ -12,21 +13,32 @@
     }
 
     .main_content {
-        margin-top:30px;
-        background:#eee;
+        margin:0 auto;
+        margin-top:50px;
+        width:600px;
+
+        background:rgba(#FFF, 0.3);
+
         padding:10px;
         @include rounded;
+
+        color:darken($dark_grey,0.5);
     }
 
 
     #prboard {
         width:100%;
-        font-size:3em;
+        font-size:2em;
+        color:#000;
         th {
             text-align: left;
+
+          &:last-child {
+            text-align:right;
+          }
         }
         td {
-            font-family:'DigitaldreamRegular';
+            font-family:'PermanentMarkerRegular';
         }
     }
 
@@ -35,9 +47,10 @@
          -moz-animation: grow 1s 1; /* FF5+ */
           -ms-animation: grow 1s 1; /* IE10 */
 
+          text-align:right;
+
           &.done {
-            font-weight:bold;
-            color:#a00;
+            color:#000;
           }
     }
 }
