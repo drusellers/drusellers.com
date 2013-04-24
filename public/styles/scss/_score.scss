@@ -53,6 +53,25 @@
             color:#000;
           }
     }
+
+    .stats {
+      margin:0 auto;
+      margin-top:50px;
+      width:600px;
+
+      background:rgba(#FFF, 0.3);
+
+      padding:10px;
+      @include rounded;
+
+      
+      svg {
+
+      }
+      path {
+        stroke:white;
+      }
+    }
 }
 
 

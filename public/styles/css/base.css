@@ -142,9 +142,24 @@ body:after {
 #pr .scoreitem.done {
   color: #000;
 }
+/* line 57, ../scss/_score.scss */
+#pr .stats {
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 600px;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 10px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 71, ../scss/_score.scss */
+#pr .stats path {
+  stroke: white;
+}
 
 @-webkit-keyframes grow {
-  /* line 63, ../scss/_score.scss */
+  /* line 82, ../scss/_score.scss */
   0% {
     opacity: 0;
     -webkit-transform: scale(0.8);
@@ -152,25 +167,25 @@ body:after {
     -ms-transform: scale(0.8);
     -o-transform: scale(0.8);
     transform: scale(0.8);
-    filter: progid:DXImageTransform.Microsoft.Matrix(/* IE6–IE9 */                      M11=0.9999025240093042, M12=-0.013962180339145272, M21=0.013962180339145272, M22=0.9999025240093042,SizingMethod='auto expand');
+    filter: progid:DXImageTransform.Microsoft.Matrix(/* IE6–IE9 */ M11=0.9999025240093042, M12=-0.013962180339145272, M21=0.013962180339145272, M22=0.9999025240093042,SizingMethod='auto expand');
   }
 
-  /* line 64, ../scss/_score.scss */
+  /* line 83, ../scss/_score.scss */
   50% {
     opacity: 0.5;
   }
 
-  /* line 65, ../scss/_score.scss */
+  /* line 84, ../scss/_score.scss */
   75% {
     -webkit-transform: scale(1.2);
     -moz-transform: scale(1.2);
     -ms-transform: scale(1.2);
     -o-transform: scale(1.2);
     transform: scale(1.2);
-    filter: progid:DXImageTransform.Microsoft.Matrix(/* IE6–IE9 */                      M11=0.9999025240093042, M12=-0.013962180339145272, M21=0.013962180339145272, M22=0.9999025240093042,SizingMethod='auto expand');
+    filter: progid:DXImageTransform.Microsoft.Matrix(/* IE6–IE9 */ M11=0.9999025240093042, M12=-0.013962180339145272, M21=0.013962180339145272, M22=0.9999025240093042,SizingMethod='auto expand');
   }
 
-  /* line 66, ../scss/_score.scss */
+  /* line 85, ../scss/_score.scss */
   100% {
     opacity: 1;
     -webkit-transform: scale(1);
@@ -178,22 +193,22 @@ body:after {
     -ms-transform: scale(1);
     -o-transform: scale(1);
     transform: scale(1);
-    filter: progid:DXImageTransform.Microsoft.Matrix(/* IE6–IE9 */                      M11=0.9999025240093042, M12=-0.013962180339145272, M21=0.013962180339145272, M22=0.9999025240093042,SizingMethod='auto expand');
+    filter: progid:DXImageTransform.Microsoft.Matrix(/* IE6–IE9 */ M11=0.9999025240093042, M12=-0.013962180339145272, M21=0.013962180339145272, M22=0.9999025240093042,SizingMethod='auto expand');
   }
 }
 
 @-moz-keyframes grow {
-  /* line 69, ../scss/_score.scss */
+  /* line 88, ../scss/_score.scss */
   0% {
     opacity: 0;
   }
 
-  /* line 70, ../scss/_score.scss */
+  /* line 89, ../scss/_score.scss */
   50% {
     opacity: 0.5;
   }
 
-  /* line 71, ../scss/_score.scss */
+  /* line 90, ../scss/_score.scss */
   100% {
     opacity: 1;
     -webkit-transform: scale(1);
@@ -201,22 +216,22 @@ body:after {
     -ms-transform: scale(1);
     -o-transform: scale(1);
     transform: scale(1);
-    filter: progid:DXImageTransform.Microsoft.Matrix(/* IE6–IE9 */                      M11=0.9999025240093042, M12=-0.013962180339145272, M21=0.013962180339145272, M22=0.9999025240093042,SizingMethod='auto expand');
+    filter: progid:DXImageTransform.Microsoft.Matrix(/* IE6–IE9 */ M11=0.9999025240093042, M12=-0.013962180339145272, M21=0.013962180339145272, M22=0.9999025240093042,SizingMethod='auto expand');
   }
 }
 
 @-ms-keyframes grow {
-  /* line 76, ../scss/_score.scss */
+  /* line 95, ../scss/_score.scss */
   0% {
     opacity: 0;
   }
 
-  /* line 77, ../scss/_score.scss */
+  /* line 96, ../scss/_score.scss */
   50% {
     opacity: 0.5;
   }
 
-  /* line 78, ../scss/_score.scss */
+  /* line 97, ../scss/_score.scss */
   100% {
     opacity: 1;
     -webkit-transform: scale(1);
@@ -224,7 +239,7 @@ body:after {
     -ms-transform: scale(1);
     -o-transform: scale(1);
     transform: scale(1);
-    filter: progid:DXImageTransform.Microsoft.Matrix(/* IE6–IE9 */                      M11=0.9999025240093042, M12=-0.013962180339145272, M21=0.013962180339145272, M22=0.9999025240093042,SizingMethod='auto expand');
+    filter: progid:DXImageTransform.Microsoft.Matrix(/* IE6–IE9 */ M11=0.9999025240093042, M12=-0.013962180339145272, M21=0.013962180339145272, M22=0.9999025240093042,SizingMethod='auto expand');
   }
 }
 
