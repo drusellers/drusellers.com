@@ -27,8 +27,9 @@ define([], function(){
                 .orient("left");
 
             var line = d3.svg.line()
-                .x(function(d) { console.log(d); return x(d.date); })
-                .y(function(d) { return y(d.weight); });
+                .x(function(d) { return x(d.date); })
+                .y(function(d) { return y(d.weight); })
+                .interpolate("basis") ;
 
 
             var svg = d3.select(this[0]).append("svg")

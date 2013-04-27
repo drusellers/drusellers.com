@@ -5,6 +5,12 @@ module.exports = function (app) {
         })
     });
 
+    app.get('/iron', function(req, res){
+        res.render('iron', {
+
+        });
+    });
+
     app.get('/prs', function (req, res) {
         res.render('prboard', {
             scores:[
