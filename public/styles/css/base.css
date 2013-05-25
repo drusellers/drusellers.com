@@ -353,13 +353,19 @@ body:after {
     width: 280px;
   }
 }
-@media all and (max-width: 700px) and (min-width: 501px) {
-  /* line 28, ../scss/_iron.scss */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) {
+  /* line 31, ../scss/_iron.scss */
   #iron .container {
     width: 400px;
   }
 }
-/* line 34, ../scss/_iron.scss */
+@media all and (max-width: 700px) and (min-width: 501px) {
+  /* line 37, ../scss/_iron.scss */
+  #iron .container {
+    width: 400px;
+  }
+}
+/* line 43, ../scss/_iron.scss */
 #iron .source {
   margin-top: 40px;
   padding-top: 20px;
