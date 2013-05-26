@@ -2,56 +2,41 @@
     background:#222;
     background-image:url(../../images/blurry.jpg);
 
-    table {
-
-    }
-
     h1 {
         color:#222;
         margin:0;
         font-size: 3em;
+        border-bottom:2px solid #ccc;
     }
 
     .main_content {
         margin:0 auto;
         margin-top:50px;
-        width:600px;
+        width:720px;
 
-        background:rgba(#FFF, 0.3);
+        background:rgba(200,200,200, 0.5);
 
         padding:10px;
         @include rounded;
 
         color:darken($dark_grey,0.5);
     }
+    .scores {
+      width:100%;
+    }
+    .score {
+      float:left;
+      width:180px;
 
-
-    #prboard {
-        width:100%;
+      h2 {
+        margin-left:10px;
+      }
+      p {
+        margin:0;
+        margin-left:10px;
         font-size:2em;
         color:#000;
-        th {
-            text-align: left;
-
-          &:last-child {
-            text-align:right;
-          }
-        }
-        td {
-            font-family:'PermanentMarkerRegular';
-        }
-    }
-
-    .scoreitem {
-      -webkit-animation: grow 1s 1; /* Saf5, Chrome */
-         -moz-animation: grow 1s 1; /* FF5+ */
-          -ms-animation: grow 1s 1; /* IE10 */
-
-          text-align:right;
-
-          &.done {
-            color:#000;
-          }
+      }
     }
 
     .stats {
@@ -64,7 +49,7 @@
       padding:10px;
       @include rounded;
 
-      
+
       svg {
 
       }

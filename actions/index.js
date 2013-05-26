@@ -1,18 +1,30 @@
 module.exports = function (app) {
     app.get('/', function (req, res) {
         res.render('index', {
-            title:'Express'
+            title:'Dru Sellers',
+            body_id:'home'
         })
+    });
+
+    app.get('/resume', function(req, res){
+        res.render('resume', {
+            title:'Dru Sellers/resume',
+            body_id:'resume',
+            exp: new Date().getFullYear() - 2001
+        });
     });
 
     app.get('/iron', function(req, res){
         res.render('iron', {
-
+            title:'Iron and the Soul',
+            body_id:'iron'
         });
     });
 
     app.get('/prs', function (req, res) {
         res.render('prboard', {
+            title:'PRs',
+            body_id:'pr',
             scores:[
                 {
                     movement:'Deadlift',
@@ -23,7 +35,7 @@ module.exports = function (app) {
                   score:'315'
                 },
                 {
-                  movement:'Shoulder Press',
+                  movement:'Press',
                   score:'155'
                 },
                 {

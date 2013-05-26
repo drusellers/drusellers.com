@@ -1,43 +1,13 @@
-<!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="UTF-8">
-    <title>Dru Sellers</title>
-
-    <link rel="openid.server" href="http://www.myopenid.com/server" />
-    <link rel="openid.delegate" href="http://drusellers.myopenid.com/" />
-
-    <link title="drusellers-rss" type="application/rss+xml" rel="alternate" href="http://feeds.feedburner.com/drusellers" />
-    <link title="drusellers-atom" type="application/atom+xml" rel="alternate" href="http://feeds.feedburner.com/drusellers" />
-
-    <link rel="stylesheet" href="/styles/css/base.css" type="text/css" media="screen" />
-
-    <script type="text/javascript" src="/scripts/jquery.js"></script>
-    <script type="text/javascript" src="/scripts/d3.v3.js"></script>
-    <script type="text/javascript" src="/scripts/require.js"></script>
-    <script type="text/javascript" src="/scripts/loader.js"></script>
-  </head>
-  <body id="pr">
-
-      <div class="main_content">
-        <h1>PR Board</h1>
-          <table id="prboard">
-            <thead>
-            <tr>
-              <th>Movement</th>
-              <th>Score</th>
-            <tr>
-            </thead>
-            <tbody>
-              {{#each scores}}
-              <tr>
-                <td>{{movement}}</td>
-                <td class="scoreitem" data-module="score" data-params='{ "value":{{score}},"type":"dru" }'>0</td>
-              </tr>
-              {{/each}}
-            </tbody>
-          </table>
-      </div>
-      <div class="stats" data-module="stats" data-params="{}"></div>
-  </body>
-</html>
+<div class="main_content">
+  <h1>PR Board</h1>
+  <div class="scores">
+    {{#each scores}}
+    <div class="score">
+      <h2>{{movement}}</h2>
+      <p>{{score}}</p>
+    </div>
+    {{/each}}
+    <div style="clear:both;"></div>
+  </div>
+</div>
+<div class="stats" data-module="stats" data-params="{}"></div>

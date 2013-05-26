@@ -1,1 +1,27 @@
-{{{body}}}
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+
+    <title>{{title}}</title>
+
+    <link rel="openid.server" href="http://www.myopenid.com/server" />
+    <link rel="openid.delegate" href="http://drusellers.myopenid.com/" />
+
+    <link title="drusellers-rss" type="application/rss+xml" rel="alternate" href="http://feeds.feedburner.com/drusellers" />
+    <link title="drusellers-atom" type="application/atom+xml" rel="alternate" href="http://feeds.feedburner.com/drusellers" />
+
+    <link rel="stylesheet" href="/styles/css/base.css" type="text/css" media="screen" />
+
+    <script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jquery.formalize.js"></script>
+
+    <script type="text/javascript" src="/scripts/d3.v3.js"></script>
+    <script type="text/javascript" src="/scripts/require.js"></script>
+    <script type="text/javascript" src="/scripts/loader.js"></script>
+  </head>
+  <body id="{{body_id}}">
+    {{{body}}}
+  </body>
+</html>

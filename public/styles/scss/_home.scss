@@ -1,13 +1,35 @@
 
 $darkblue:#011c26;
 
-#header {
-    margin-top:40px;
-
-    .center {
+#home {
+    .container {
         margin:0 auto;
         width:600px;
     }
+
+    blockquote {
+        padding-top: 20px;
+        overflow: hidden; /* clearfix alternative */
+        font-size: 18px;
+        line-height: 150%;
+        color: $fresh_green;
+        margin:0;
+    }
+
+    blockquote:before {
+        font-family: 'Lucida Grande', Verdana, helvetica, sans-serif;
+        display: block;
+        float: left;
+        margin: 10px 10px 0 0;
+        font-size: 60px; /* let's make it a big quote! */
+        content: open-quote; /* here we define our :before as a smart quote. It could be any content, even the HTML entity alternative to this opening quote, that is “ */
+        color: darken($fresh_green, 0.5);
+        text-shadow: 0 1px 1px #909090;
+    }
+}
+
+.header {
+    margin-top:40px;
 
     .logo {
         @include column(8);
@@ -20,51 +42,61 @@ $darkblue:#011c26;
 }
 
 
-#imgbar {
+.imgbar {
     margin-top:30px;
-
-    .images {
-        @include column(12);
-    }
-
-    .center {
-        margin:0 auto;
-        width:600px;
-    }
-
-    img {
-    }
 }
 
 
+.role {
+  @include column(12);
+  .resources {
+    clear:both;
+    list-style: none;
+    float:left;
+    width:100%;
+    padding:0;
+    margin:0 0 10px 0;
+
+    li {
+      float:left;
+
+      padding:0;
+      margin:0;
+
+      position: relative;
+      margin-right:10px;
+    }
+  }
+}
+
+.quotes {
+  ul {
+    list-style: none;
+    width:100%;
+    margin:0;
+    padding:0;
+  }
+  li {
+    @include column(6);
+  }
+}
+
 #footer {
-    background: #fff;
+  @include column(12);
+    background: $grayLighter;
     margin-top: 20px;
     padding-top: 5px;
     overflow:hidden;
 
-    .center {
-        margin: 0 auto;
-        width:600px;
-    }
     h3 {
         color:#588c8c;
     }
+
     img {
         margin: 0;
-        float: left;
     }
 
-    .links {
-        @include column(4);
-    }
-    .props {
-        @include column(4);
-    }
-    .zen, .birds {
-        @include column(4);
-    }
-    .boring {
-        @include column(12);
+    .props, .boring {
+        @include column(6);
     }
 }

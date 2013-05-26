@@ -6,7 +6,6 @@
 	}
 
 	h1 {
-
 		small {
 			color: $dark_grey;
 			display:block;
@@ -14,7 +13,6 @@
 		}
 	}
 
-	//iphone portrait
 	@media only screen
 		and (min-device-width : 320px)
 		and (max-device-width : 480px)
