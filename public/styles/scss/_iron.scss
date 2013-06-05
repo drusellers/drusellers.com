@@ -1,10 +1,5 @@
 #iron {
 
-	.container {
-		width:500px;
-		margin: 0 auto;
-	}
-
 	h1 {
 		small {
 			color: $dark_grey;
@@ -13,29 +8,7 @@
 		}
 	}
 
-	@media only screen
-		and (min-device-width : 320px)
-		and (max-device-width : 480px)
-		and (orientation : portrait) {
-			.container {
-				width:280px;
-			}
-		}
 
-	@media only screen
-		and (min-device-width : 320px)
-		and (max-device-width : 480px)
-		and (orientation : landscape) {
-			.container {
-				width:400px;
-			}
-	}
-
-	@media all and (max-width: 700px) and (min-width: 501px) {
-		.container {
-			width:400px;
-		}
-	}
 
 
 	.source {

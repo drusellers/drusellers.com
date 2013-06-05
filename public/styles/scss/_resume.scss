@@ -1,7 +1,31 @@
 #resume {
-  .container {
-      margin:0 auto;
-      width:600px;
-  }
 
+  .xxx {
+    position:relative;
+
+
+    .pic {
+      position:absolute;
+      left:-350px;
+      top:0px;
+    }
+  }
+  .experience {
+    h4 {
+      margin-bottom:0;
+    }
+    ul {
+      list-style: none;
+      margin:0;
+      padding:0;
+
+      .title {
+        float:left;
+      }
+
+      .time {
+        float:right;
+      }
+    }
+  }
 }
