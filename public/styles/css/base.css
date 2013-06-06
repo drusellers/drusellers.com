@@ -387,32 +387,84 @@ body:after {
   color: #777777;
 }
 
-/* line 3, ../scss/_resume.scss */
-#resume .xxx {
+@media all and (max-width: 700px) and (min-width: 501px) {
+  /* line 3, ../scss/_resume.scss */
+  #resume .header {
+    display: none;
+  }
+}
+/* line 9, ../scss/_resume.scss */
+#resume .body {
   position: relative;
 }
-/* line 7, ../scss/_resume.scss */
-#resume .xxx .pic {
+/* line 12, ../scss/_resume.scss */
+#resume .body blockquote {
+  font-style: italic;
+  margin-left: 2em;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+  /* line 12, ../scss/_resume.scss */
+  #resume .body blockquote {
+    margin-left: 0;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) {
+  /* line 12, ../scss/_resume.scss */
+  #resume .body blockquote {
+    margin-left: 0;
+  }
+}
+@media all and (max-width: 700px) and (min-width: 501px) {
+  /* line 12, ../scss/_resume.scss */
+  #resume .body blockquote {
+    margin-left: 0;
+  }
+}
+/* line 40, ../scss/_resume.scss */
+#resume .body .pic {
   position: absolute;
   left: -350px;
   top: 0px;
 }
-/* line 14, ../scss/_resume.scss */
-#resume .experience h4 {
-  margin-bottom: 0;
-}
-/* line 17, ../scss/_resume.scss */
-#resume .experience ul {
+/* line 48, ../scss/_resume.scss */
+#resume ul.activities {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 22, ../scss/_resume.scss */
-#resume .experience ul .title {
+/* line 54, ../scss/_resume.scss */
+#resume ul.activities li {
+  margin-bottom: 1.5em;
+  margin-left: 2em;
+}
+/* line 59, ../scss/_resume.scss */
+#resume .experience, #resume .education {
+  margin-left: 2em;
+}
+/* line 62, ../scss/_resume.scss */
+#resume .experience h4, #resume .education h4 {
+  margin-bottom: 0;
+  margin-left: -1em;
+}
+/* line 66, ../scss/_resume.scss */
+#resume .experience ul, #resume .education ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 71, ../scss/_resume.scss */
+#resume .experience ul .title, #resume .education ul .title {
+  color: #444444;
+  font-weight: bold;
   float: left;
 }
-/* line 26, ../scss/_resume.scss */
-#resume .experience ul .time {
+/* line 76, ../scss/_resume.scss */
+#resume .experience ul .title small, #resume .education ul .title small {
+  color: #777777;
+  font-weight: normal;
+}
+/* line 82, ../scss/_resume.scss */
+#resume .experience ul .time, #resume .education ul .time {
   float: right;
 }
 
@@ -435,25 +487,25 @@ h1, h2, h3, h4, h5, h6 {
   color: #00a1d9;
 }
 
-/* line 27, ../scss/base.scss */
+/* line 28, ../scss/base.scss */
 h3 {
   font-size: 1.3em;
   margin: 0;
   line-height: 1em;
 }
 
-/* line 33, ../scss/base.scss */
+/* line 34, ../scss/base.scss */
 ul {
   color: #777777;
 }
 
-/* line 37, ../scss/base.scss */
+/* line 38, ../scss/base.scss */
 a {
   color: #30aab4;
   text-decoration: none;
 }
 
-/* line 40, ../scss/base.scss */
+/* line 41, ../scss/base.scss */
 a.block {
   display: block;
   padding: 1%;
@@ -461,14 +513,14 @@ a.block {
   border-bottom: 1px solid #cccccc;
 }
 
-/* line 46, ../scss/base.scss */
+/* line 47, ../scss/base.scss */
 dl dt {
   margin-top: 10px;
   font-size: 120%;
   color: #558822;
 }
 
-/* line 51, ../scss/base.scss */
+/* line 52, ../scss/base.scss */
 hr {
   clear: both;
   display: block;

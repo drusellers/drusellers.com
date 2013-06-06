@@ -1,18 +1,67 @@
 #resume {
 
-  .xxx {
+  .header {
+    @media all and (max-width: 700px) and (min-width: 501px) {
+          display:none;
+          //actually just move to footer?
+      }
+  }
+  .body {
     position:relative;
+
+    blockquote {
+
+      font-style: italic;
+      margin-left:2em;
+
+      @media only screen
+        and (min-device-width : 320px)
+        and (max-device-width : 480px)
+        and (orientation : portrait) {
+            margin-left:0;
+      }
+
+
+      @media only screen
+        and (min-device-width : 320px)
+        and (max-device-width : 480px)
+        and (orientation : landscape) {
+            margin-left:0;
+      }
+
+      @media all and (max-width: 700px) and (min-width: 501px) {
+          margin-left:0;
+      }
+
+    }
+
 
 
     .pic {
+      //some media query styling as well.
       position:absolute;
       left:-350px;
       top:0px;
     }
   }
-  .experience {
+
+  ul.activities {
+      list-style: none;
+      margin:0;
+      padding:0;
+
+
+    li {
+      margin-bottom:1.5em;
+      margin-left:2em;
+    }
+  }
+  .experience, .education {
+
+    margin-left:2em;
     h4 {
       margin-bottom:0;
+      margin-left:-1em;
     }
     ul {
       list-style: none;
@@ -20,7 +69,14 @@
       padding:0;
 
       .title {
+        color:darken($copy_color, 20%);
+        font-weight:bold;
         float:left;
+
+        small {
+          color:$copy_color;
+          font-weight: normal;
+        }
       }
 
       .time {
