@@ -1,15 +1,14 @@
 #iron {
+  .header { display: none; }
+	.footer { display: none; }
 
-	h1 {
-		small {
-			color: $dark_grey;
-			display:block;
-			clear:both;
-		}
-	}
-
-
-
+  h1 {
+    small {
+      color: $dark_grey;
+      display:block;
+      clear:both;
+    }
+  }
 
 	.source {
 		margin-top:40px;

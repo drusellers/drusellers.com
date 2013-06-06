@@ -24,7 +24,7 @@ module.exports = function (app) {
     app.get('/prs', function (req, res) {
         res.render('prboard', {
             title:'PRs',
-            body_id:'pr',
+            body_id:'prboard',
             scores:[
                 {
                     movement:'Deadlift',

@@ -4,10 +4,12 @@
 @import "grid";
 @import "layout";
 @import "font";
-@import "score";
+
 @import "home";
 @import "iron";
 @import "resume";
+
+@import "prboard";
 
 body {
   color: $copy_color;
@@ -58,5 +60,37 @@ hr {
     border-style:inset;
 }
 
+.header {
+    margin-top:2em;
+
+    .logo {
+        @include column(8);
+    }
+    .details {
+        @include column(4);
+        font-size:0.92em;
+        text-align:right;
+    }
+}
+
+.footer {
+  @include column(12);
+    background: $grayLighter;
+    margin-top: 20px;
+    padding-top: 5px;
+    overflow:hidden;
+
+    h3 {
+        color:#588c8c;
+    }
+
+    img {
+        margin: 0;
+    }
+
+    .props, .boring {
+        @include column(6);
+    }
+}
 
 
