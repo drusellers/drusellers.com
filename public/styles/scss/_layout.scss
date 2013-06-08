@@ -1,25 +1,24 @@
+$break-small: 320px; //the smallest part of iPhone
+$break-large: 700px;
+
+@mixin respond-to($media) {
+  @if $media == handhelds {
+    @media only screen and (max-width: $break-small) { @content; }
+  }
+  @else if $media == medium-screens {
+    @media only screen and (min-width: $break-small + 1) and (max-width: $break-large - 1) { @content; }
+  }
+  @else if $media == wide-screens {
+    @media only screen and (min-width: $break-large) { @content; }
+  }
+}
+
 .container {
-  width:600px;
   margin: 0 auto;
 
-  @media only screen
-    and (min-device-width : 320px)
-    and (max-device-width : 480px)
-    and (orientation : portrait) {
-        width:280px;
-  }
-
-
-  @media only screen
-    and (min-device-width : 320px)
-    and (max-device-width : 480px)
-    and (orientation : landscape) {
-        width:400px;
-  }
-
-  @media all and (max-width: 700px) and (min-width: 501px) {
-      width:400px;
-  }
+  @include respond-to(handhelds) { width:280px; }
+  @include respond-to(medium-screens) { width:400px; }
+  @include respond-to(wide-screens) { width: 600px; }
 }
 
 

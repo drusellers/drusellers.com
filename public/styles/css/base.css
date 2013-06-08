@@ -14,27 +14,26 @@ body:after {
   clear: both;
 }
 
-/* line 1, ../scss/_layout.scss */
+/* line 16, ../scss/_layout.scss */
 .container {
-  width: 600px;
   margin: 0 auto;
 }
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
-  /* line 1, ../scss/_layout.scss */
+@media only screen and (max-width: 320px) {
+  /* line 16, ../scss/_layout.scss */
   .container {
     width: 280px;
   }
 }
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) {
-  /* line 1, ../scss/_layout.scss */
+@media only screen and (min-width: 321px) and (max-width: 699px) {
+  /* line 16, ../scss/_layout.scss */
   .container {
     width: 400px;
   }
 }
-@media all and (max-width: 700px) and (min-width: 501px) {
-  /* line 1, ../scss/_layout.scss */
+@media only screen and (min-width: 700px) {
+  /* line 16, ../scss/_layout.scss */
   .container {
-    width: 400px;
+    width: 600px;
   }
 }
 
@@ -139,15 +138,32 @@ body:after {
 .imgbar {
   margin-top: 30px;
 }
-
-/* line 29, ../scss/_home.scss */
-.role {
-  display: inline;
-  float: left;
-  width: 584px;
-  margin: 0 8px;
+@media only screen and (max-width: 320px) {
+  /* line 24, ../scss/_home.scss */
+  .imgbar {
+    height: 100px;
+  }
 }
-/* line 31, ../scss/_home.scss */
+@media only screen and (min-width: 321px) and (max-width: 699px) {
+  /* line 24, ../scss/_home.scss */
+  .imgbar {
+    height: 266px;
+    background-image: url(/images/cooking-medium.jpg);
+  }
+}
+@media only screen and (min-width: 700px) {
+  /* line 24, ../scss/_home.scss */
+  .imgbar {
+    height: 399px;
+    background-image: url(/images/cooking.jpg);
+  }
+}
+
+/* line 43, ../scss/_home.scss */
+.role {
+  width: 100%;
+}
+/* line 46, ../scss/_home.scss */
 .role .resources {
   clear: both;
   list-style: none;
@@ -156,7 +172,7 @@ body:after {
   padding: 0;
   margin: 0 0 10px 0;
 }
-/* line 39, ../scss/_home.scss */
+/* line 54, ../scss/_home.scss */
 .role .resources li {
   float: left;
   padding: 5px;
@@ -169,19 +185,39 @@ body:after {
   background: #f6f6f6;
 }
 
-/* line 54, ../scss/_home.scss */
+/* line 69, ../scss/_home.scss */
 .quotes ul {
   list-style: none;
   width: 100%;
   margin: 0;
   padding: 0;
 }
-/* line 60, ../scss/_home.scss */
-.quotes li {
-  display: inline;
-  float: left;
-  width: 284px;
-  margin: 0 8px;
+@media only screen and (max-width: 320px) {
+  /* line 75, ../scss/_home.scss */
+  .quotes li {
+    display: inline;
+    float: left;
+    width: 99%;
+    margin: 0 1%;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 699px) {
+  /* line 75, ../scss/_home.scss */
+  .quotes li {
+    display: inline;
+    float: left;
+    width: 99%;
+    margin: 0 1%;
+  }
+}
+@media only screen and (min-width: 700px) {
+  /* line 75, ../scss/_home.scss */
+  .quotes li {
+    display: inline;
+    float: left;
+    width: 284px;
+    margin: 0 8px;
+  }
 }
 
 /* line 2, ../scss/_iron.scss */
@@ -440,7 +476,7 @@ body:after {
   }
 }
 
-/* line 14, ../scss/base.scss */
+/* line 15, ../scss/base.scss */
 body {
   color: #777777;
   background: white;
@@ -449,35 +485,35 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* line 22, ../scss/base.scss */
+/* line 23, ../scss/base.scss */
 p {
   color: #777777;
 }
 
-/* line 26, ../scss/base.scss */
+/* line 27, ../scss/base.scss */
 h1, h2, h3, h4, h5, h6 {
   color: #00a1d9;
 }
 
-/* line 30, ../scss/base.scss */
+/* line 31, ../scss/base.scss */
 h3 {
   font-size: 1.3em;
   margin: 0;
   line-height: 1em;
 }
 
-/* line 36, ../scss/base.scss */
+/* line 37, ../scss/base.scss */
 ul {
   color: #777777;
 }
 
-/* line 40, ../scss/base.scss */
+/* line 41, ../scss/base.scss */
 a {
   color: #30aab4;
   text-decoration: none;
 }
 
-/* line 43, ../scss/base.scss */
+/* line 44, ../scss/base.scss */
 a.block {
   display: block;
   padding: 1%;
@@ -485,14 +521,14 @@ a.block {
   border-bottom: 1px solid #cccccc;
 }
 
-/* line 49, ../scss/base.scss */
+/* line 50, ../scss/base.scss */
 dl dt {
   margin-top: 10px;
   font-size: 120%;
   color: #558822;
 }
 
-/* line 54, ../scss/base.scss */
+/* line 55, ../scss/base.scss */
 hr {
   clear: both;
   display: block;
@@ -502,50 +538,97 @@ hr {
   border-style: inset;
 }
 
-/* line 63, ../scss/base.scss */
+/* line 64, ../scss/base.scss */
 .header {
   margin-top: 2em;
 }
-/* line 66, ../scss/base.scss */
-.header .logo {
-  display: inline;
-  float: left;
-  width: 384px;
-  margin: 0 8px;
+@media only screen and (max-width: 320px) {
+  /* line 67, ../scss/base.scss */
+  .header .logo {
+    width: 100%;
+  }
 }
-/* line 69, ../scss/base.scss */
+@media only screen and (min-width: 321px) and (max-width: 699px) {
+  /* line 67, ../scss/base.scss */
+  .header .logo {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 700px) {
+  /* line 67, ../scss/base.scss */
+  .header .logo {
+    display: inline;
+    float: left;
+    width: 384px;
+    margin: 0 8px;
+  }
+}
+/* line 73, ../scss/base.scss */
 .header .details {
-  display: inline;
-  float: left;
-  width: 184px;
-  margin: 0 8px;
   font-size: 0.92em;
   text-align: right;
 }
+@media only screen and (max-width: 320px) {
+  /* line 73, ../scss/base.scss */
+  .header .details {
+    display: none;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 699px) {
+  /* line 73, ../scss/base.scss */
+  .header .details {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 700px) {
+  /* line 73, ../scss/base.scss */
+  .header .details {
+    display: inline;
+    float: left;
+    width: 184px;
+    margin: 0 8px;
+  }
+}
 
-/* line 76, ../scss/base.scss */
+/* line 83, ../scss/base.scss */
 .footer {
-  display: inline;
-  float: left;
-  width: 584px;
-  margin: 0 8px;
   background: #eeeeee;
   margin-top: 20px;
   padding-top: 5px;
   overflow: hidden;
 }
-/* line 83, ../scss/base.scss */
+/* line 89, ../scss/base.scss */
 .footer h3 {
   color: #588c8c;
 }
-/* line 87, ../scss/base.scss */
+/* line 93, ../scss/base.scss */
 .footer img {
   margin: 0;
 }
-/* line 91, ../scss/base.scss */
-.footer .props, .footer .boring {
-  display: inline;
-  float: left;
-  width: 284px;
-  margin: 0 8px;
+@media only screen and (max-width: 320px) {
+  /* line 97, ../scss/base.scss */
+  .footer .props, .footer .boring {
+    display: inline;
+    float: left;
+    width: 99%;
+    margin: 0 1%;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 699px) {
+  /* line 97, ../scss/base.scss */
+  .footer .props, .footer .boring {
+    display: inline;
+    float: left;
+    width: 99%;
+    margin: 0 1%;
+  }
+}
+@media only screen and (min-width: 700px) {
+  /* line 97, ../scss/base.scss */
+  .footer .props, .footer .boring {
+    display: inline;
+    float: left;
+    width: 284px;
+    margin: 0 8px;
+  }
 }

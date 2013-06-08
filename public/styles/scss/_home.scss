@@ -23,11 +23,26 @@
 
 .imgbar {
     margin-top:30px;
+
+
+    @include respond-to(handhelds) {
+      height:100px;
+    }
+    @include respond-to(medium-screens) {
+      height:266px;
+      background-image:url(/images/cooking-medium.jpg);
+    }
+    @include respond-to(wide-screens) {
+      height:399px;
+      background-image:url(/images/cooking.jpg);
+    }
+
 }
 
 
 .role {
-  @include column(12);
+  width:100%;
+
   .resources {
     clear:both;
     list-style: none;
@@ -58,7 +73,10 @@
     padding:0;
   }
   li {
-    @include column(6);
+
+    @include respond-to(handhelds) { @include full(); }
+    @include respond-to(medium-screens) { @include full(); }
+    @include respond-to(wide-screens) { @include column(6); }
   }
 }
 
