@@ -141,7 +141,8 @@ body:after {
 @media only screen and (max-width: 320px) {
   /* line 24, ../scss/_home.scss */
   .imgbar {
-    height: 100px;
+    height: 186px;
+    background-image: url(/images/cooking-small.jpg);
   }
 }
 @media only screen and (min-width: 321px) and (max-width: 699px) {
@@ -159,11 +160,11 @@ body:after {
   }
 }
 
-/* line 43, ../scss/_home.scss */
+/* line 44, ../scss/_home.scss */
 .role {
   width: 100%;
 }
-/* line 46, ../scss/_home.scss */
+/* line 47, ../scss/_home.scss */
 .role .resources {
   clear: both;
   list-style: none;
@@ -172,7 +173,7 @@ body:after {
   padding: 0;
   margin: 0 0 10px 0;
 }
-/* line 54, ../scss/_home.scss */
+/* line 55, ../scss/_home.scss */
 .role .resources li {
   float: left;
   padding: 5px;
@@ -185,7 +186,7 @@ body:after {
   background: #f6f6f6;
 }
 
-/* line 69, ../scss/_home.scss */
+/* line 70, ../scss/_home.scss */
 .quotes ul {
   list-style: none;
   width: 100%;
@@ -193,7 +194,7 @@ body:after {
   padding: 0;
 }
 @media only screen and (max-width: 320px) {
-  /* line 75, ../scss/_home.scss */
+  /* line 76, ../scss/_home.scss */
   .quotes li {
     display: inline;
     float: left;
@@ -202,7 +203,7 @@ body:after {
   }
 }
 @media only screen and (min-width: 321px) and (max-width: 699px) {
-  /* line 75, ../scss/_home.scss */
+  /* line 76, ../scss/_home.scss */
   .quotes li {
     display: inline;
     float: left;
@@ -211,7 +212,7 @@ body:after {
   }
 }
 @media only screen and (min-width: 700px) {
-  /* line 75, ../scss/_home.scss */
+  /* line 76, ../scss/_home.scss */
   .quotes li {
     display: inline;
     float: left;

@@ -26,7 +26,8 @@
 
 
     @include respond-to(handhelds) {
-      height:100px;
+      height:186px;
+      background-image:url(/images/cooking-small.jpg);
     }
     @include respond-to(medium-screens) {
       height:266px;
