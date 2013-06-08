@@ -122,7 +122,7 @@ body:after {
 }
 /* line 11, ../scss/_home.scss */
 #home blockquote:before {
-  font-family: "Lucida Grande", Verdana, helvetica, sans-serif;
+  font-family: 'Lucida Grande', Verdana, helvetica, sans-serif;
   display: block;
   float: left;
   margin: 10px 10px 0 0;
@@ -242,83 +242,85 @@ body:after {
   color: #777777;
 }
 
-@media all and (max-width: 700px) and (min-width: 501px) {
-  /* line 3, ../scss/_resume.scss */
-  #resume .header {
-    display: none;
-  }
-}
-/* line 9, ../scss/_resume.scss */
+/* line 3, ../scss/_resume.scss */
 #resume .body {
   position: relative;
 }
-/* line 12, ../scss/_resume.scss */
+/* line 6, ../scss/_resume.scss */
 #resume .body blockquote {
   font-style: italic;
   margin-left: 2em;
 }
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
-  /* line 12, ../scss/_resume.scss */
+@media only screen and (max-width: 320px) {
+  /* line 6, ../scss/_resume.scss */
   #resume .body blockquote {
     margin-left: 0;
   }
 }
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) {
-  /* line 12, ../scss/_resume.scss */
+@media only screen and (min-width: 321px) and (max-width: 699px) {
+  /* line 6, ../scss/_resume.scss */
   #resume .body blockquote {
     margin-left: 0;
   }
 }
-@media all and (max-width: 700px) and (min-width: 501px) {
-  /* line 12, ../scss/_resume.scss */
+@media only screen and (min-width: 700px) {
+  /* line 6, ../scss/_resume.scss */
   #resume .body blockquote {
-    margin-left: 0;
+    margin-left: 2em;
   }
 }
-/* line 40, ../scss/_resume.scss */
-#resume .body .pic {
-  position: absolute;
-  left: -350px;
-  top: 0px;
+@media only screen and (max-width: 320px) {
+  /* line 17, ../scss/_resume.scss */
+  #resume .body .pic {
+    display: none;
+  }
 }
-/* line 48, ../scss/_resume.scss */
-#resume ul.activities {
+@media only screen and (min-width: 321px) and (max-width: 699px) {
+  /* line 17, ../scss/_resume.scss */
+  #resume .body .pic {
+    display: none;
+  }
+}
+@media only screen and (min-width: 700px) {
+  /* line 17, ../scss/_resume.scss */
+  #resume .body .pic {
+    position: absolute;
+    left: -350px;
+    top: 0px;
+  }
+}
+/* line 28, ../scss/_resume.scss */
+#resume ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 54, ../scss/_resume.scss */
+/* line 35, ../scss/_resume.scss */
 #resume ul.activities li {
-  margin-bottom: 1.5em;
+  margin-bottom: 1.25em;
   margin-left: 2em;
 }
-/* line 59, ../scss/_resume.scss */
+/* line 40, ../scss/_resume.scss */
 #resume .experience, #resume .education {
   margin-left: 2em;
 }
-/* line 62, ../scss/_resume.scss */
+/* line 43, ../scss/_resume.scss */
 #resume .experience h4, #resume .education h4 {
   margin-bottom: 0;
   margin-left: -1em;
 }
-/* line 66, ../scss/_resume.scss */
-#resume .experience ul, #resume .education ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-/* line 71, ../scss/_resume.scss */
+/* line 48, ../scss/_resume.scss */
 #resume .experience ul .title, #resume .education ul .title {
   color: #444444;
   font-weight: bold;
   float: left;
 }
-/* line 76, ../scss/_resume.scss */
+/* line 53, ../scss/_resume.scss */
 #resume .experience ul .title small, #resume .education ul .title small {
   color: #777777;
   font-weight: normal;
 }
-/* line 82, ../scss/_resume.scss */
+/* line 59, ../scss/_resume.scss */
 #resume .experience ul .time, #resume .education ul .time {
   float: right;
 }
@@ -341,7 +343,7 @@ body:after {
   color: #222;
   margin: 0;
   font-size: 3em;
-  border-bottom: 2px solid #cccccc;
+  border-bottom: 2px solid #ccc;
 }
 /* line 15, ../scss/_prboard.scss */
 #prboard .main_content {
@@ -400,7 +402,7 @@ body:after {
     -ms-transform: scale(0.8);
     -o-transform: scale(0.8);
     transform: scale(0.8);
-    filter: progid:DXImageTransform.Microsoft.Matrix(/* IE6–IE9 */                      M11=0.9999025240093042, M12=-0.013962180339145272, M21=0.013962180339145272, M22=0.9999025240093042,SizingMethod='auto expand');
+    filter: progid:DXImageTransform.Microsoft.Matrix(/* IE6–IE9 */ M11=0.9999025240093042, M12=-0.013962180339145272, M21=0.013962180339145272, M22=0.9999025240093042,SizingMethod='auto expand');
   }
 
   /* line 72, ../scss/_prboard.scss */
@@ -415,7 +417,7 @@ body:after {
     -ms-transform: scale(1.2);
     -o-transform: scale(1.2);
     transform: scale(1.2);
-    filter: progid:DXImageTransform.Microsoft.Matrix(/* IE6–IE9 */                      M11=0.9999025240093042, M12=-0.013962180339145272, M21=0.013962180339145272, M22=0.9999025240093042,SizingMethod='auto expand');
+    filter: progid:DXImageTransform.Microsoft.Matrix(/* IE6–IE9 */ M11=0.9999025240093042, M12=-0.013962180339145272, M21=0.013962180339145272, M22=0.9999025240093042,SizingMethod='auto expand');
   }
 
   /* line 74, ../scss/_prboard.scss */
@@ -426,7 +428,7 @@ body:after {
     -ms-transform: scale(1);
     -o-transform: scale(1);
     transform: scale(1);
-    filter: progid:DXImageTransform.Microsoft.Matrix(/* IE6–IE9 */                      M11=0.9999025240093042, M12=-0.013962180339145272, M21=0.013962180339145272, M22=0.9999025240093042,SizingMethod='auto expand');
+    filter: progid:DXImageTransform.Microsoft.Matrix(/* IE6–IE9 */ M11=0.9999025240093042, M12=-0.013962180339145272, M21=0.013962180339145272, M22=0.9999025240093042,SizingMethod='auto expand');
   }
 }
 
@@ -449,7 +451,7 @@ body:after {
     -ms-transform: scale(1);
     -o-transform: scale(1);
     transform: scale(1);
-    filter: progid:DXImageTransform.Microsoft.Matrix(/* IE6–IE9 */                      M11=0.9999025240093042, M12=-0.013962180339145272, M21=0.013962180339145272, M22=0.9999025240093042,SizingMethod='auto expand');
+    filter: progid:DXImageTransform.Microsoft.Matrix(/* IE6–IE9 */ M11=0.9999025240093042, M12=-0.013962180339145272, M21=0.013962180339145272, M22=0.9999025240093042,SizingMethod='auto expand');
   }
 }
 
@@ -472,7 +474,7 @@ body:after {
     -ms-transform: scale(1);
     -o-transform: scale(1);
     transform: scale(1);
-    filter: progid:DXImageTransform.Microsoft.Matrix(/* IE6–IE9 */                      M11=0.9999025240093042, M12=-0.013962180339145272, M21=0.013962180339145272, M22=0.9999025240093042,SizingMethod='auto expand');
+    filter: progid:DXImageTransform.Microsoft.Matrix(/* IE6–IE9 */ M11=0.9999025240093042, M12=-0.013962180339145272, M21=0.013962180339145272, M22=0.9999025240093042,SizingMethod='auto expand');
   }
 }
 
@@ -551,7 +553,10 @@ hr {
 @media only screen and (min-width: 321px) and (max-width: 699px) {
   /* line 67, ../scss/base.scss */
   .header .logo {
-    width: 100%;
+    display: inline;
+    float: left;
+    width: 99%;
+    margin: 0 1%;
   }
 }
 @media only screen and (min-width: 700px) {
@@ -577,7 +582,7 @@ hr {
 @media only screen and (min-width: 321px) and (max-width: 699px) {
   /* line 73, ../scss/base.scss */
   .header .details {
-    width: 100%;
+    display: none;
   }
 }
 @media only screen and (min-width: 700px) {
