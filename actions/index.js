@@ -40,11 +40,11 @@ module.exports = function (app) {
                 },
                 {
                     movement:'Clean',
-                    score:'240'
+                    score:'245'
                 },
                 {
                     movement:'Snatch',
-                    score:'186'
+                    score:'190'
                 },
                 {
                     movement:'Front Squat',

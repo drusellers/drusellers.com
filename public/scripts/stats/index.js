@@ -3,7 +3,7 @@ define([], function(){
         init : function(params){
             //inspired by: http://bl.ocks.org/mbostock/3883245
             var $self = $(this);
-            
+
             var margin = {top: 20, right: 20, bottom: 30, left: 50},
                 width = 600 - margin.left - margin.right,
                 height = 200 - margin.top - margin.bottom;
@@ -78,6 +78,9 @@ define([], function(){
         },{
             date: new Date("3/6/2013"),
             weight: 184
+        },{
+            date: new Date("7/24/2013"),
+            weight: 190
         }]]
     }
 });

@@ -23,3 +23,42 @@ $break-large: 700px;
 
 
 
+.header {
+    margin-top:2em;
+
+    .logo {
+      @include respond-to(handhelds) { width:100%; }
+      @include respond-to(medium-screens) { @include full(); }
+      @include respond-to(wide-screens) { @include column(8); }
+
+    }
+    .details {
+      @include respond-to(handhelds) { display:none; }
+      @include respond-to(medium-screens) { display:none; }
+      @include respond-to(wide-screens) { @include column(4); }
+
+      font-size:0.92em;
+      text-align:right;
+    }
+}
+
+.footer {
+    background: $grayLighter;
+    margin-top: 20px;
+    padding-top: 5px;
+    overflow:hidden;
+
+    h3 {
+        color:#588c8c;
+    }
+
+    img {
+        margin: 0;
+    }
+
+    .props, .boring {
+        @include respond-to(handhelds) { @include full(); }
+        @include respond-to(medium-screens) { @include full(); }
+        @include respond-to(wide-screens) { @include column(6); }
+    }
+}
