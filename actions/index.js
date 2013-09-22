@@ -32,7 +32,7 @@ module.exports = function (app) {
                 },
                 {
                   movement:'Backsquat',
-                  score:'315'
+                  score:'325'
                 },
                 {
                   movement:'Press',
@@ -40,7 +40,7 @@ module.exports = function (app) {
                 },
                 {
                     movement:'Clean',
-                    score:'245'
+                    score:'255'
                 },
                 {
                     movement:'Snatch',
@@ -52,13 +52,47 @@ module.exports = function (app) {
                 },
                 {
                     movement:'Jerk',
-                    score:'240'
+                    score:'245'
                 },
                 {
                     movement:'Benchpress',
-                    score:'210'
+                    score:'225'
                 }
-            ]
+            ],
+          wods : [
+            {
+                name: 'Fight Gone Bad',
+                score: '258'
+            },
+            {
+                name: 'Jackie',
+                score: '8:47'
+            },
+            {
+                name: 'Nancy',
+                score: '16:04'
+            },
+            {
+                name: 'Fran',
+                score: '5:46'
+            },
+            {
+                name: 'Diane',
+                score: '6:35'
+            },
+            {
+                name: 'Helen',
+                score: '10:23'
+            },
+            {
+                name: 'Grace',
+                score: '3:47'
+            },
+            {
+                name: 'Karen',
+                score: '8:52'
+            }
+          ]
         });
     });
 };

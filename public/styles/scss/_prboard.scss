@@ -5,85 +5,24 @@
   background:#222;
   background-image:url(../../images/blurry.jpg);
 
-    h1 {
-        color:#222;
-        margin:0;
-        font-size: 3em;
-        border-bottom:2px solid #ccc;
-    }
+  h1 {
+      color:#aaa;
+      margin:0;
+      font-size: 3em;
+      border-bottom:2px solid #ccc;
+  }
 
     .main_content {
-        margin:0 auto;
         margin-top:50px;
-        width:720px;
-
-        background:rgba(200,200,200, 0.5);
-
-        padding:10px;
-        @include rounded;
-
-        color:darken($dark_grey,0.5);
     }
 
-    .scores {
-      width:100%;
-    }
     .score {
-      float:left;
-      width:180px;
 
       h2 {
-        margin-left:10px;
+
       }
       p {
-        margin:0;
-        margin-left:10px;
-        font-size:2em;
-        color:#000;
+        color:#bbb;
       }
     }
-
-    .stats {
-      margin:0 auto;
-      margin-top:50px;
-      width:600px;
-
-      background:rgba(#FFF, 0.3);
-
-      padding:10px;
-      @include rounded;
-
-
-      svg {
-
-      }
-      path {
-        stroke:white;
-      }
-    }
-}
-
-
-
-
-
-@-webkit-keyframes grow {
-  0%   { opacity:0; @include scale(0.8)}
-  50%  { opacity:0.5;}
-   75% { @include scale(1.2); }
-  100% { opacity:1; @include scale(1);}
-}
-@-moz-keyframes grow {
-  0%   { opacity:0; }
-  50%  { opacity:0.5; }
-  100% { opacity:1;
-  @include scale(1);
-  }
-}
-@-ms-keyframes grow {
-  0%   { opacity:0; }
-  50%  { opacity:0.5; }
-  100% { opacity:1;
-    @include scale(1);
-  }
 }

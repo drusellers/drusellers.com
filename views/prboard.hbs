@@ -1,13 +1,45 @@
-<div class="main_content">
-  <h1>PR Board</h1>
-  <div class="scores">
-    {{#each scores}}
-    <div class="score">
-      <h2>{{movement}}</h2>
-      <p>{{score}}</p>
+<div class="row main-content" >
+  <div class="small-12 columns">
+    <h1>Stats</h1>
+  </div>
+  <div class="large-3 small-12 columns" data-module="heartrate" data-params="{}">
+    <h2>Heartrate</h2>
+  </div>
+
+  <div class="large-9 small-12 columns" data-module="stats" data-params="{}">
+    <h2>Body Composition</h2>
+  </div>
+
+  <div class="small-12 columns">
+    <div class="stats">
+      <h2>Lifts</h2>
+
+      <ul class="large-block-grid-4 small-block-grid-2">
+        {{#each scores}}
+        <li class="score">
+          <h3>{{movement}}</h3>
+          <p>{{score}}</p>
+        </li>
+        {{/each}}
+      </ul>
+      <div style="clear:both;"></div>
     </div>
-    {{/each}}
-    <div style="clear:both;"></div>
+  </div>
+  <div class="small-12 columns">
+    <div class="stats">
+      <h2>WODs</h2>
+
+      <ul class="large-block-grid-4 small-block-grid-2">
+        {{#each wods}}
+        <li class="score">
+          <h3>{{name}}</h3>
+          <p>{{score}}</p>
+        </li>
+        {{/each}}
+      </ul>
+      <div style="clear:both;"></div>
+    </div>
   </div>
 </div>
-<div class="stats" data-module="stats" data-params="{}"></div>
+
+
