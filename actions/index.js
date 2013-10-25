@@ -40,19 +40,19 @@ module.exports = function (app) {
                 },
                 {
                     movement:'Clean',
-                    score:'255'
+                    score:'260'
                 },
                 {
                     movement:'Snatch',
-                    score:'190'
+                    score:'200'
                 },
                 {
                     movement:'Front Squat',
-                    score:'280'
+                    score:'300'
                 },
                 {
                     movement:'Jerk',
-                    score:'245'
+                    score:'255'
                 },
                 {
                     movement:'Benchpress',
@@ -62,7 +62,7 @@ module.exports = function (app) {
           wods : [
             {
                 name: 'Fight Gone Bad',
-                score: '258'
+                score: '257'
             },
             {
                 name: 'Jackie',
