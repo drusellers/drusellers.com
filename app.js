@@ -1,7 +1,7 @@
 var express = require('express')
   , hbs = require('hbs')
 
-var app = module.exports = express.createServer();
+var app = module.exports = express();
 
 // Express Configuration
 app.configure(function(){
@@ -20,11 +20,11 @@ hbs.registerHelper('json', function(context) {
 
 //error handlers
 app.configure('development', function(){
-  app.use(express.errorHandler({ dumpExceptions: true, showStack: true })); 
+  app.use(express.errorHandler({ dumpExceptions: true, showStack: true }));
 });
 
 app.configure('production', function(){
-  app.use(express.errorHandler()); 
+  app.use(express.errorHandler());
 });
 
 
@@ -32,4 +32,4 @@ app.configure('production', function(){
 require('./actions')(app);
 var port = process.env.PORT || 3000;
 app.listen(port);
-console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
+console.log("Express server listening on port %d in %s mode", port, app.settings.env);
