@@ -43,6 +43,15 @@
     h4 {
       margin-bottom:0;
       margin-left:-1em;
+
+      small {
+        font-size:50%;
+        color:#aaa;
+        a {
+          color:#aaa;
+          text-decoration:underline;
+        }
+      }
     }
     ul {
       .title {
