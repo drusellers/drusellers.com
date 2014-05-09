@@ -6,6 +6,13 @@ module.exports = function (app) {
         })
     });
 
+    app.get('/xyz', function(req, res){
+        res.render('xyz', {
+            title : 'random',
+            body_id : 'random'
+        });
+    });
+
     app.get('/resume', function(req, res){
         res.render('resume', {
             title:'Dru Sellers/resume',
