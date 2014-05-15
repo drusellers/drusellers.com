@@ -1,0 +1,19 @@
+#allegory {
+  .header { display: none; }
+  .footer { display: none; }
+
+  h1 {
+    small {
+      color: $dark_grey;
+      display:block;
+      clear:both;
+    }
+  }
+
+  .source {
+    margin-top:40px;
+    padding-top:20px;
+    border-top: 1px dotted $dark_grey;
+    color:$gray;
+  }
+}

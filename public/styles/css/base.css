@@ -8509,6 +8509,28 @@ body, p {
   color: #777777;
 }
 
+/* line 2, ../scss/_allegory.scss */
+#allegory .header {
+  display: none;
+}
+/* line 3, ../scss/_allegory.scss */
+#allegory .footer {
+  display: none;
+}
+/* line 6, ../scss/_allegory.scss */
+#allegory h1 small {
+  color: #373c40;
+  display: block;
+  clear: both;
+}
+/* line 13, ../scss/_allegory.scss */
+#allegory .source {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px dotted #373c40;
+  color: #777777;
+}
+
 /* line 3, ../scss/_resume.scss */
 #resume .body {
   position: relative;
@@ -8584,19 +8606,20 @@ body, p {
 /* line 50, ../scss/_resume.scss */
 #resume .experience h4 small a, #resume .education h4 small a {
   color: #aaa;
+  text-decoration: underline;
 }
-/* line 56, ../scss/_resume.scss */
+/* line 57, ../scss/_resume.scss */
 #resume .experience ul .title, #resume .education ul .title {
   color: #444444;
   font-weight: bold;
   float: left;
 }
-/* line 61, ../scss/_resume.scss */
+/* line 62, ../scss/_resume.scss */
 #resume .experience ul .title small, #resume .education ul .title small {
   color: #777777;
   font-weight: normal;
 }
-/* line 67, ../scss/_resume.scss */
+/* line 68, ../scss/_resume.scss */
 #resume .experience ul .time, #resume .education ul .time {
   float: right;
 }
@@ -8630,7 +8653,7 @@ body, p {
   color: #bbb;
 }
 
-/* line 26, ../scss/base.scss */
+/* line 27, ../scss/base.scss */
 body {
   color: #777777;
   background: white;
@@ -8638,35 +8661,35 @@ body {
   margin: 0;
 }
 
-/* line 33, ../scss/base.scss */
+/* line 34, ../scss/base.scss */
 p {
   color: #777777;
 }
 
-/* line 37, ../scss/base.scss */
+/* line 38, ../scss/base.scss */
 h1, h2, h3, h4, h5, h6 {
   color: #00a1d9;
 }
 
-/* line 41, ../scss/base.scss */
+/* line 42, ../scss/base.scss */
 h3 {
   font-size: 1.3em;
   margin: 0;
   line-height: 1em;
 }
 
-/* line 47, ../scss/base.scss */
+/* line 48, ../scss/base.scss */
 ul {
   color: #777777;
 }
 
-/* line 51, ../scss/base.scss */
+/* line 52, ../scss/base.scss */
 a {
   color: #30aab4;
   text-decoration: none;
 }
 
-/* line 54, ../scss/base.scss */
+/* line 55, ../scss/base.scss */
 a.block {
   display: block;
   padding: 1%;
@@ -8674,14 +8697,14 @@ a.block {
   border-bottom: 1px solid #cccccc;
 }
 
-/* line 60, ../scss/base.scss */
+/* line 61, ../scss/base.scss */
 dl dt {
   margin-top: 10px;
   font-size: 120%;
   color: #558822;
 }
 
-/* line 66, ../scss/base.scss */
+/* line 67, ../scss/base.scss */
 hr {
   clear: both;
   display: block;
@@ -8691,7 +8714,7 @@ hr {
   border-style: inset;
 }
 
-/* line 77, ../scss/base.scss */
+/* line 78, ../scss/base.scss */
 .vcard {
   border: none;
 }

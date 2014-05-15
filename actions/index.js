@@ -27,6 +27,12 @@ module.exports = function (app) {
             body_id:'iron'
         });
     });
+    app.get('/allegory', function(req, res){
+        res.render('allegory', {
+            title:'Allegory of the Cave',
+            body_id:'allegory'
+        });
+    });
 
     app.get('/prs', function (req, res) {
         res.render('prboard', {
