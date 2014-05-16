@@ -18,8 +18,8 @@
         color: darken($fresh_green, 0.5);
         text-shadow: 0 1px 1px #909090;
     }
-}
 
+}
 
 .imgbar {
     margin-top:30px;
@@ -35,7 +35,7 @@
     }
     @include respond-to(wide-screens) {
       height:399px;
-      background-image:url(/images/cooking.jpg);
+      background-image:url(/images/dru-down.png);
     }
 
 }
