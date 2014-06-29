@@ -8226,6 +8226,48 @@ th.hide-for-touch {
   display: table-cell !important;
 }
 
+/* line 2, ../scss/_microformats.scss */
+.vcard {
+  border: none;
+}
+
+/* line 8, ../scss/_typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #ed553b;
+}
+
+/* line 13, ../scss/_typography.scss */
+body, p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* line 17, ../scss/_typography.scss */
+h3 {
+  font-size: 1.3em;
+  margin: 0;
+  line-height: 1em;
+}
+
+/* line 23, ../scss/_typography.scss */
+p, ul {
+  color: #777777;
+}
+
+/* line 27, ../scss/_typography.scss */
+a {
+  color: #30aab4;
+  text-decoration: none;
+}
+
+/* line 32, ../scss/_typography.scss */
+a.block {
+  display: block;
+  padding: 1%;
+  font-size: 140%;
+  border-bottom: 1px solid #cccccc;
+}
+
 /* line 41, ../scss/_grid.scss */
 body {
   width: 100%;
@@ -8241,41 +8283,49 @@ body:after {
   clear: both;
 }
 
-/* line 16, ../scss/_layout.scss */
+/* line 4, ../scss/_layout.scss */
+body {
+  background: none;
+  color: #777777;
+  padding-bottom: 0;
+  margin: 0;
+}
+
+/* line 23, ../scss/_layout.scss */
 .container {
   margin: 0 auto;
 }
 @media only screen and (max-width: 320px) {
-  /* line 16, ../scss/_layout.scss */
+  /* line 23, ../scss/_layout.scss */
   .container {
     width: 280px;
   }
 }
 @media only screen and (min-width: 321px) and (max-width: 699px) {
-  /* line 16, ../scss/_layout.scss */
+  /* line 23, ../scss/_layout.scss */
   .container {
     width: 400px;
   }
 }
 @media only screen and (min-width: 700px) {
-  /* line 16, ../scss/_layout.scss */
+  /* line 23, ../scss/_layout.scss */
   .container {
     width: 600px;
   }
 }
 
-/* line 26, ../scss/_layout.scss */
+/* line 33, ../scss/_layout.scss */
 .header {
   margin-top: 2em;
 }
 @media only screen and (max-width: 320px) {
-  /* line 29, ../scss/_layout.scss */
+  /* line 36, ../scss/_layout.scss */
   .header .logo {
     width: 100%;
   }
 }
 @media only screen and (min-width: 321px) and (max-width: 699px) {
-  /* line 29, ../scss/_layout.scss */
+  /* line 36, ../scss/_layout.scss */
   .header .logo {
     display: inline;
     float: left;
@@ -8284,7 +8334,7 @@ body:after {
   }
 }
 @media only screen and (min-width: 700px) {
-  /* line 29, ../scss/_layout.scss */
+  /* line 36, ../scss/_layout.scss */
   .header .logo {
     display: inline;
     float: left;
@@ -8292,25 +8342,25 @@ body:after {
     margin: 0 8px;
   }
 }
-/* line 35, ../scss/_layout.scss */
+/* line 42, ../scss/_layout.scss */
 .header .details {
   font-size: 0.92em;
   text-align: right;
 }
 @media only screen and (max-width: 320px) {
-  /* line 35, ../scss/_layout.scss */
+  /* line 42, ../scss/_layout.scss */
   .header .details {
     display: none;
   }
 }
 @media only screen and (min-width: 321px) and (max-width: 699px) {
-  /* line 35, ../scss/_layout.scss */
+  /* line 42, ../scss/_layout.scss */
   .header .details {
     display: none;
   }
 }
 @media only screen and (min-width: 700px) {
-  /* line 35, ../scss/_layout.scss */
+  /* line 42, ../scss/_layout.scss */
   .header .details {
     display: inline;
     float: left;
@@ -8319,23 +8369,23 @@ body:after {
   }
 }
 
-/* line 45, ../scss/_layout.scss */
+/* line 52, ../scss/_layout.scss */
 .footer {
-  background: #eeeeee;
+  background-color: none;
   margin-top: 20px;
   padding-top: 5px;
   overflow: hidden;
 }
-/* line 51, ../scss/_layout.scss */
+/* line 58, ../scss/_layout.scss */
 .footer h3 {
   color: #588c8c;
 }
-/* line 55, ../scss/_layout.scss */
+/* line 62, ../scss/_layout.scss */
 .footer img {
   margin: 0;
 }
 @media only screen and (max-width: 320px) {
-  /* line 59, ../scss/_layout.scss */
+  /* line 66, ../scss/_layout.scss */
   .footer .props, .footer .boring {
     display: inline;
     float: left;
@@ -8344,7 +8394,7 @@ body:after {
   }
 }
 @media only screen and (min-width: 321px) and (max-width: 699px) {
-  /* line 59, ../scss/_layout.scss */
+  /* line 66, ../scss/_layout.scss */
   .footer .props, .footer .boring {
     display: inline;
     float: left;
@@ -8353,7 +8403,7 @@ body:after {
   }
 }
 @media only screen and (min-width: 700px) {
-  /* line 59, ../scss/_layout.scss */
+  /* line 66, ../scss/_layout.scss */
   .footer .props, .footer .boring {
     display: inline;
     float: left;
@@ -8362,27 +8412,17 @@ body:after {
   }
 }
 
-/* line 6, ../scss/_typography.scss */
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-/* line 10, ../scss/_typography.scss */
-body, p {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-/* line 2, ../scss/_home.scss */
+/* line 6, ../scss/_index.scss */
 #home blockquote {
   padding-top: 2em;
   overflow: hidden;
   /* clearfix alternative */
   font-size: 18px;
   line-height: 150%;
-  color: #558822;
+  color: #00a1d9;
   margin: 0;
 }
-/* line 11, ../scss/_home.scss */
+/* line 15, ../scss/_index.scss */
 #home blockquote:before {
   font-family: 'Lucida Grande', Verdana, helvetica, sans-serif;
   display: block;
@@ -8392,41 +8432,33 @@ body, p {
   /* let's make it a big quote! */
   content: open-quote;
   /* here we define our :before as a smart quote. It could be any content, even the HTML entity alternative to this opening quote, that is “ */
-  color: #548621;
+  color: #009fd6;
   text-shadow: 0 1px 1px #909090;
 }
 
-/* line 24, ../scss/_home.scss */
+/* line 28, ../scss/_index.scss */
 .imgbar {
-  margin-top: 30px;
-}
-@media only screen and (max-width: 320px) {
-  /* line 24, ../scss/_home.scss */
-  .imgbar {
-    height: 186px;
-    background-image: url(/images/cooking-small.jpg);
-  }
-}
-@media only screen and (min-width: 321px) and (max-width: 699px) {
-  /* line 24, ../scss/_home.scss */
-  .imgbar {
-    height: 266px;
-    background-image: url(/images/cooking-medium.jpg);
-  }
-}
-@media only screen and (min-width: 700px) {
-  /* line 24, ../scss/_home.scss */
-  .imgbar {
-    height: 399px;
-    background-image: url(/images/dru-down.png);
-  }
+  /*
+      @include respond-to(handhelds) {
+        height:186px;
+        background-image:url(/images/cooking-small.jpg);
+      }
+      @include respond-to(medium-screens) {
+        height:266px;
+        background-image:url(/images/cooking-medium.jpg);
+      }
+      @include respond-to(wide-screens) {
+        height:399px;
+        background-image:url(/images/dru-serious.jpg);
+      }
+  */
 }
 
-/* line 44, ../scss/_home.scss */
+/* line 48, ../scss/_index.scss */
 .role {
   width: 100%;
 }
-/* line 47, ../scss/_home.scss */
+/* line 51, ../scss/_index.scss */
 .role .resources {
   clear: both;
   list-style: none;
@@ -8435,24 +8467,31 @@ body, p {
   padding: 0;
   margin: 0 0 10px 0;
 }
-/* line 55, ../scss/_home.scss */
+/* line 59, ../scss/_index.scss */
 .role .resources li {
   float: left;
   padding: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+  opacity: 0.2;
   margin: 0;
   position: relative;
   margin-right: 10px;
-  background: #f6f6f6;
+  background: #f8e79b;
+}
+/* line 72, ../scss/_index.scss */
+.role .resources li:content {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
 }
 
-/* line 69, ../scss/_home.scss */
+/* line 78, ../scss/_index.scss */
 .quotes {
   margin-top: 3em;
 }
-/* line 72, ../scss/_home.scss */
+/* line 81, ../scss/_index.scss */
 .quotes ul {
   list-style: none;
   width: 100%;
@@ -8460,7 +8499,7 @@ body, p {
   padding: 0;
 }
 @media only screen and (max-width: 320px) {
-  /* line 78, ../scss/_home.scss */
+  /* line 87, ../scss/_index.scss */
   .quotes li {
     display: inline;
     float: left;
@@ -8469,7 +8508,7 @@ body, p {
   }
 }
 @media only screen and (min-width: 321px) and (max-width: 699px) {
-  /* line 78, ../scss/_home.scss */
+  /* line 87, ../scss/_index.scss */
   .quotes li {
     display: inline;
     float: left;
@@ -8478,7 +8517,7 @@ body, p {
   }
 }
 @media only screen and (min-width: 700px) {
-  /* line 78, ../scss/_home.scss */
+  /* line 87, ../scss/_index.scss */
   .quotes li {
     display: inline;
     float: left;
@@ -8531,95 +8570,104 @@ body, p {
   color: #777777;
 }
 
-/* line 3, ../scss/_resume.scss */
+/* line 1, ../scss/_resume.scss */
+body#resume {
+  background: #fff;
+}
+
+/* line 5, ../scss/_resume.scss */
+#resume {
+  background: #fff;
+}
+/* line 9, ../scss/_resume.scss */
 #resume .body {
   position: relative;
 }
-/* line 6, ../scss/_resume.scss */
+/* line 12, ../scss/_resume.scss */
 #resume .body blockquote {
   font-style: italic;
   margin-left: 2em;
 }
 @media only screen and (max-width: 320px) {
-  /* line 6, ../scss/_resume.scss */
+  /* line 12, ../scss/_resume.scss */
   #resume .body blockquote {
     margin-left: 0;
   }
 }
 @media only screen and (min-width: 321px) and (max-width: 699px) {
-  /* line 6, ../scss/_resume.scss */
+  /* line 12, ../scss/_resume.scss */
   #resume .body blockquote {
     margin-left: 0;
   }
 }
 @media only screen and (min-width: 700px) {
-  /* line 6, ../scss/_resume.scss */
+  /* line 12, ../scss/_resume.scss */
   #resume .body blockquote {
     margin-left: 2em;
   }
 }
 @media only screen and (max-width: 320px) {
-  /* line 17, ../scss/_resume.scss */
+  /* line 23, ../scss/_resume.scss */
   #resume .body .pic {
     display: none;
   }
 }
 @media only screen and (min-width: 321px) and (max-width: 699px) {
-  /* line 17, ../scss/_resume.scss */
+  /* line 23, ../scss/_resume.scss */
   #resume .body .pic {
     display: none;
   }
 }
 @media only screen and (min-width: 700px) {
-  /* line 17, ../scss/_resume.scss */
+  /* line 23, ../scss/_resume.scss */
   #resume .body .pic {
     position: absolute;
     left: -350px;
     top: 0px;
   }
 }
-/* line 28, ../scss/_resume.scss */
+/* line 34, ../scss/_resume.scss */
 #resume ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 35, ../scss/_resume.scss */
+/* line 41, ../scss/_resume.scss */
 #resume ul.activities li {
   margin-bottom: 1.25em;
   margin-left: 2em;
 }
-/* line 40, ../scss/_resume.scss */
+/* line 46, ../scss/_resume.scss */
 #resume .experience, #resume .education {
   margin-left: 2em;
 }
-/* line 43, ../scss/_resume.scss */
+/* line 49, ../scss/_resume.scss */
 #resume .experience h4, #resume .education h4 {
   margin-bottom: 0;
   margin-left: -1em;
 }
-/* line 47, ../scss/_resume.scss */
+/* line 53, ../scss/_resume.scss */
 #resume .experience h4 small, #resume .education h4 small {
   font-size: 50%;
   color: #aaa;
 }
-/* line 50, ../scss/_resume.scss */
+/* line 56, ../scss/_resume.scss */
 #resume .experience h4 small a, #resume .education h4 small a {
   color: #aaa;
   text-decoration: underline;
 }
-/* line 57, ../scss/_resume.scss */
+/* line 63, ../scss/_resume.scss */
 #resume .experience ul .title, #resume .education ul .title {
   color: #444444;
   font-weight: bold;
   float: left;
 }
-/* line 62, ../scss/_resume.scss */
+/* line 68, ../scss/_resume.scss */
 #resume .experience ul .title small, #resume .education ul .title small {
   color: #777777;
   font-weight: normal;
 }
-/* line 68, ../scss/_resume.scss */
+/* line 74, ../scss/_resume.scss */
 #resume .experience ul .time, #resume .education ul .time {
   float: right;
 }
@@ -8651,70 +8699,4 @@ body, p {
 /* line 24, ../scss/_prboard.scss */
 #prboard .score p {
   color: #bbb;
-}
-
-/* line 27, ../scss/base.scss */
-body {
-  color: #777777;
-  background: white;
-  padding-bottom: 0;
-  margin: 0;
-}
-
-/* line 34, ../scss/base.scss */
-p {
-  color: #777777;
-}
-
-/* line 38, ../scss/base.scss */
-h1, h2, h3, h4, h5, h6 {
-  color: #00a1d9;
-}
-
-/* line 42, ../scss/base.scss */
-h3 {
-  font-size: 1.3em;
-  margin: 0;
-  line-height: 1em;
-}
-
-/* line 48, ../scss/base.scss */
-ul {
-  color: #777777;
-}
-
-/* line 52, ../scss/base.scss */
-a {
-  color: #30aab4;
-  text-decoration: none;
-}
-
-/* line 55, ../scss/base.scss */
-a.block {
-  display: block;
-  padding: 1%;
-  font-size: 140%;
-  border-bottom: 1px solid #cccccc;
-}
-
-/* line 61, ../scss/base.scss */
-dl dt {
-  margin-top: 10px;
-  font-size: 120%;
-  color: #558822;
-}
-
-/* line 67, ../scss/base.scss */
-hr {
-  clear: both;
-  display: block;
-  margin: 20px 0 19px;
-  border: 0;
-  border-bottom: 1px solid #eeeeee;
-  border-style: inset;
-}
-
-/* line 78, ../scss/base.scss */
-.vcard {
-  border: none;
 }

@@ -13,3 +13,10 @@
   -webkit-border-radius: 5px;
           border-radius: 5px;
 }
+
+@mixin full(){
+  display:inline;
+  float:left;
+  width: 99%;
+  margin: 0 1%;
+}

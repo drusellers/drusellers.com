@@ -1,12 +1,37 @@
-$body_copy: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$title_copy: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$callout_copy: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$code_copy: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$body_copy_font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$title_copy_font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$callout_copy_font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$code_copy_font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+// font size settings
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $title_copy;
+  font-family: $title_copy_font;
+  color: $heading_color;
 }
 
 body, p {
-  font-family: $body_copy;
+  font-family: $body_copy_font;
+}
+
+h3 {
+  font-size:1.3em;
+  margin:0;
+  line-height: 1em;
+}
+
+p, ul {
+  color: $copy_color;
+}
+
+a {
+  color: $link_color;
+  text-decoration: none;
+}
+
+a.block {
+  display: block;
+  padding: 1%;
+  font-size: 140%;
+  border-bottom: 1px solid #cccccc;
 }

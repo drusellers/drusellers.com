@@ -2,7 +2,9 @@ module.exports = function (app) {
     app.get('/', function (req, res) {
         res.render('index', {
             title:'Dru Sellers',
-            body_id:'home'
+            body_id:'home',
+            cover: 'index-cover',
+            logo:'logo-white'
         })
     });
 
@@ -17,20 +19,23 @@ module.exports = function (app) {
         res.render('resume', {
             title:'Dru Sellers/resume',
             body_id:'resume',
-            exp: new Date().getFullYear() - 2001
+            exp: new Date().getFullYear() - 2001,
+            logo : "logo-black"
         });
     });
 
     app.get('/iron', function(req, res){
         res.render('iron', {
             title:'Iron and the Soul',
-            body_id:'iron'
+            body_id:'iron',
+            logo : "logo-black"
         });
     });
     app.get('/allegory', function(req, res){
         res.render('allegory', {
             title:'Allegory of the Cave',
-            body_id:'allegory'
+            body_id:'allegory',
+            logo : "logo-black"
         });
     });
 
@@ -41,7 +46,7 @@ module.exports = function (app) {
             scores:[
                 {
                     movement:'Deadlift',
-                    score:'385'
+                    score:'400'
                 },
                 {
                   movement:'Backsquat',
@@ -49,7 +54,7 @@ module.exports = function (app) {
                 },
                 {
                   movement:'Press',
-                  score:'155'
+                  score:'165'
                 },
                 {
                     movement:'Clean',
@@ -57,7 +62,7 @@ module.exports = function (app) {
                 },
                 {
                     movement:'Snatch',
-                    score:'200'
+                    score:'215'
                 },
                 {
                     movement:'Front Squat',

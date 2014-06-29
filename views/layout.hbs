@@ -14,6 +14,10 @@
 
     <link rel="stylesheet" href="/styles/css/base.css" type="text/css" media="screen" />
 
+    {{#if cover}}
+    <link rel="stylesheet" href="/styles/css/{{cover}}.css" type="text/css" media="screen" />
+    {{/if}}
+
     <script type="text/javascript" src="scripts/jquery.js"></script>
     <script type="text/javascript" src="scripts/jquery.formalize.js"></script>
 
@@ -25,7 +29,7 @@
     <div class="container">
       <div class="header">
         <div class="logo">
-            <img src="images/logo-black.png" alt="Dru Sellers" />
+            <img src="images/{{logo}}.png" alt="Dru Sellers" />
         </div>
         <div class="details">
           <div id="hcard-Dru-Sellers" class="vcard">
@@ -55,9 +59,9 @@
       <div class="footer">
         <div class="props">
           <h3>Props</h3>
-          <p>Logo design by the <a href="http://www.theagilebadger.com">Agile Badger</a></p>
-          <p>Colors inspired by '<a href="http://kuler.adobe.com/">Kuler</a>'</p>
-          <p>Photo by <a href="http://b7creative.com/">B7Creative</a></p>
+          <p>Logo design by the <a href="http://www.theagilebadger.com" target="_blank">Agile Badger</a></p>
+          <p>Colors inspired by '<a href="http://kuler.adobe.com/" target="_blank">Kuler</a>'</p>
+          <p>Photo by <a href="http://hotea.me/" target="_blank">Danny Hotea</a></p>
         </div>
         <div class="boring">
           <h3>Boring</h3>

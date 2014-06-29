@@ -1,6 +1,13 @@
 $break-small: 320px; //the smallest part of iPhone
 $break-large: 700px;
 
+body {
+  background:none;
+  color: $copy_color;
+  padding-bottom: 0;
+  margin:0;
+}
+
 @mixin respond-to($media) {
   @if $media == handhelds {
     @media only screen and (max-width: $break-small) { @content; }
@@ -43,7 +50,7 @@ $break-large: 700px;
 }
 
 .footer {
-    background: $grayLighter;
+    background-color: $footer_background_color;
     margin-top: 20px;
     padding-top: 5px;
     overflow:hidden;

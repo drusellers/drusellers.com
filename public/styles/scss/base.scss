@@ -6,73 +6,32 @@
 
 // Comment out this import if you are customizing you imports below
 @import "foundation";
-
-
+@import "microformats";
 @import "compass/css3";
-@import "colors";
-@import "mixins";
-@import "grid";
-@import "grid.extensions";
-@import "layout";
 @import "fonts";
-@import "typography";
 
-@import "home";
+// THEME 1
+//@import "light_colors";
+//@import "light_stuff";
+
+// THEME 2
+@import "dark_colors";
+
+// END THEMES
+
+
+@import "mixins";
+@import "typography";
+@import "grid";
+@import "layout";
+
+
+
+/////////
+// PAGES
+@import "index";
 @import "iron";
 @import "allegory";
 @import "resume";
-
 @import "prboard";
 
-body {
-  color: $copy_color;
-  background: $white;
-  padding-bottom: 0;
-  margin:0;
-}
-
-p {
-  color: $gray;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color: $heading_color;
-}
-
-h3 {
-  font-size:1.3em;
-  margin:0;
-  line-height: 1em;
-}
-
-ul {
-  color: $copy_color;
-}
-
-a {
-  color: $link_color;
-  text-decoration: none; }
-  a.block {
-    display: block;
-    padding: 1%;
-    font-size: 140%;
-    border-bottom: 1px solid #cccccc; }
-
-dl dt {
-    margin-top: 10px;
-    font-size: 120%;
-    color: $fresh_green;
-}
-
-hr {
-    clear:both;
-    display:block;
-    margin: 20px 0 19px;
-    border:0;
-    border-bottom:1px solid $grayLighter;
-    border-style:inset;
-}
-
-
-
-.vcard { border: none; }
