@@ -8564,6 +8564,10 @@ body {
   color: #000;
 }
 /* line 17, ../scss/_allegory.scss */
+#allegory dt small {
+  font-weight: normal;
+}
+/* line 21, ../scss/_allegory.scss */
 #allegory .source {
   margin-top: 40px;
   padding-top: 20px;
