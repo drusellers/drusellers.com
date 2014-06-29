@@ -8242,13 +8242,6 @@ body, p {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* line 17, ../scss/_typography.scss */
-h3 {
-  font-size: 1.3em;
-  margin: 0;
-  line-height: 1em;
-}
-
 /* line 23, ../scss/_typography.scss */
 p, ul {
   color: #777777;
@@ -8541,6 +8534,10 @@ body {
   clear: both;
 }
 /* line 13, ../scss/_iron.scss */
+#iron h2 {
+  color: #000;
+}
+/* line 16, ../scss/_iron.scss */
 #iron .source {
   margin-top: 40px;
   padding-top: 20px;
@@ -8563,6 +8560,10 @@ body {
   clear: both;
 }
 /* line 13, ../scss/_allegory.scss */
+#allegory h2 {
+  color: #000;
+}
+/* line 17, ../scss/_allegory.scss */
 #allegory .source {
   margin-top: 40px;
   padding-top: 20px;
