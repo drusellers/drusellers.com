@@ -15,6 +15,12 @@ module.exports = function (app) {
         });
     });
 
+    app.get('/creed', function(req, res){
+        res.render('creed', {
+            logo:'logo-black'
+        });
+    });
+
     app.get('/resume', function(req, res){
         res.render('resume', {
             title:'Dru Sellers/resume',
