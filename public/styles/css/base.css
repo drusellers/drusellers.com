@@ -8242,18 +8242,18 @@ body, p {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* line 23, ../scss/_typography.scss */
+/* line 17, ../scss/_typography.scss */
 p, ul {
   color: #777777;
 }
 
-/* line 27, ../scss/_typography.scss */
+/* line 21, ../scss/_typography.scss */
 a {
   color: #30aab4;
   text-decoration: none;
 }
 
-/* line 32, ../scss/_typography.scss */
+/* line 26, ../scss/_typography.scss */
 a.block {
   display: block;
   padding: 1%;
@@ -8649,7 +8649,6 @@ body#resume {
 /* line 49, ../scss/_resume.scss */
 #resume .experience h4, #resume .education h4 {
   margin-bottom: 0;
-  margin-left: -1em;
 }
 /* line 53, ../scss/_resume.scss */
 #resume .experience h4 small, #resume .education h4 small {
