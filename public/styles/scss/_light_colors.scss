@@ -5,12 +5,14 @@ $white: #fff;
 $gray: #777;
 $dark_grey: #373c40;
 $blue: #011C26;
-$background: #F4F5F5;
+
 $black : #000;
 $white : #fff;
 $seagreen:#588c8c;
 $grayLighter:#eee;
 $darkblue:#011c26;
+$salmon:#ED553B;
+$bright_blue:#00A1D9;
 
 //bahamas
 $color1:#003056;
@@ -22,8 +24,11 @@ $color5:#f2d03b;
 //$link_color:$fresh_green;
 //$heading_color: $blue;
 $link_color:lighten(#207178,15%);
+$resource_link_color:$color1;
+$resource_link_bg:$grayLighter;
 $heading_color: $color3;
 $copy_color:$gray;
+$background: #F4F5F5;
+$footer_background_color:none;
 
-
-$quote_color: $color2;
+$quote_color: $fresh_green;

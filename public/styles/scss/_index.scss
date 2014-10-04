@@ -61,16 +61,18 @@
 
       padding:5px;
       @include rounded();
-      @include opacity(0.2);
       margin:0;
 
       position: relative;
       margin-right:10px;
-      background: lighten($color5, 20%);
+      background: $resource_link_bg;
 
     }
+    a {
+      color:$resource_link_color;
+    }
     li:content{
-      @include opacity(1);
+
     }
   }
 }

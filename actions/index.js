@@ -4,7 +4,7 @@ module.exports = function (app) {
             title:'Dru Sellers',
             body_id:'home',
             cover: 'index-cover',
-            logo:'logo-white'
+            logo:'logo-black'
         })
     });
 

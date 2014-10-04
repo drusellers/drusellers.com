@@ -8231,10 +8231,27 @@ th.hide-for-touch {
   border: none;
 }
 
+/* line 2, ../scss/_light_stuff.scss */
+dl dt {
+  margin-top: 10px;
+  font-size: 120%;
+  color: #04518c;
+}
+
+/* line 8, ../scss/_light_stuff.scss */
+hr {
+  clear: both;
+  display: block;
+  margin: 20px 0 19px;
+  border: 0;
+  border-bottom: 1px solid #eeeeee;
+  border-style: inset;
+}
+
 /* line 8, ../scss/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #ed553b;
+  color: #00a1d9;
 }
 
 /* line 13, ../scss/_typography.scss */
@@ -8412,7 +8429,7 @@ body {
   /* clearfix alternative */
   font-size: 18px;
   line-height: 150%;
-  color: #00a1d9;
+  color: #558822;
   margin: 0;
 }
 /* line 15, ../scss/_index.scss */
@@ -8425,7 +8442,7 @@ body {
   /* let's make it a big quote! */
   content: open-quote;
   /* here we define our :before as a smart quote. It could be any content, even the HTML entity alternative to this opening quote, that is “ */
-  color: #009fd6;
+  color: #548621;
   text-shadow: 0 1px 1px #909090;
 }
 
@@ -8467,24 +8484,21 @@ body {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
-  opacity: 0.2;
   margin: 0;
   position: relative;
   margin-right: 10px;
-  background: #f8e79b;
+  background: #eeeeee;
 }
-/* line 72, ../scss/_index.scss */
-.role .resources li:content {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-  opacity: 1;
+/* line 71, ../scss/_index.scss */
+.role .resources a {
+  color: #003056;
 }
 
-/* line 78, ../scss/_index.scss */
+/* line 80, ../scss/_index.scss */
 .quotes {
   margin-top: 3em;
 }
-/* line 81, ../scss/_index.scss */
+/* line 83, ../scss/_index.scss */
 .quotes ul {
   list-style: none;
   width: 100%;
@@ -8492,7 +8506,7 @@ body {
   padding: 0;
 }
 @media only screen and (max-width: 320px) {
-  /* line 87, ../scss/_index.scss */
+  /* line 89, ../scss/_index.scss */
   .quotes li {
     display: inline;
     float: left;
@@ -8501,7 +8515,7 @@ body {
   }
 }
 @media only screen and (min-width: 321px) and (max-width: 699px) {
-  /* line 87, ../scss/_index.scss */
+  /* line 89, ../scss/_index.scss */
   .quotes li {
     display: inline;
     float: left;
@@ -8510,7 +8524,7 @@ body {
   }
 }
 @media only screen and (min-width: 700px) {
-  /* line 87, ../scss/_index.scss */
+  /* line 89, ../scss/_index.scss */
   .quotes li {
     display: inline;
     float: left;
@@ -8646,7 +8660,7 @@ body#resume {
 #resume .experience, #resume .education {
   margin-left: 2em;
 }
-/* line 49, ../scss/_resume.scss */
+/* line 50, ../scss/_resume.scss */
 #resume .experience h4, #resume .education h4 {
   margin-bottom: 0;
 }
