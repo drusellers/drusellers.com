@@ -1,7 +1,7 @@
 var express = require('express')
-  , hbs = require('hbs'),
-  bodyParser = require('body-parser')
-  errorHandler = require('errorhandler');
+  , hbs = require('hbs')
+  , bodyParser = require('body-parser')
+  , errorHandler = require('errorhandler');
 
 var app = module.exports = express();
 
@@ -13,8 +13,8 @@ app.use(bodyParser.json());
 app.use(express.static(__dirname + '/public'));
 
 //handlebars helpers
-hbs.registerHelper('json', function(context) {
-  return JSON.stringify(context);
+hbs.registerHelper('json', function(options) {
+  return JSON.stringify(options);
 });
 
 //error handlers

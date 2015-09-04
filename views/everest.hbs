@@ -1,0 +1,27 @@
+<div class="container">
+  <h1>Everest</h1>
+
+  <div>
+    <script type="text/javascript" data-module="everest">
+      {{{json timeline}}}
+    </script>
+  </div>
+  <table>
+  	<thead>
+  		<tr>
+  			<th>Date</th>
+  			<th>Location</th>
+  			<th>Elevation</th>
+  		</tr>
+  	</thead>
+  	<tbody>
+  		{{#each timeline}}
+  		<tr>
+  			<td>{{d}}</td>
+  			<td>{{l}}</td>
+  			<td>{{e}}</td>
+  		</tr>
+  		{{/each}}
+  	</tbody>
+  </table>
+</div>
